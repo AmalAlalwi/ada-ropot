@@ -396,7 +396,7 @@ export const BiomechanicalHeadSvg: React.FC<{ activeServo?: number | null; class
 
       {/* Header Legend */}
       <text x="280" y="32" textAnchor="middle" fill="#EFEFFB" fontSize="13" fontWeight="700" letterSpacing="0.12em" fontFamily="'Montserrat', sans-serif">
-        17-MOTOR BIOMIMETIC FACIAL ACTUATOR TOPOLOGY
+        17-ACTUATOR BIOMIMETIC FACIAL TOPOLOGY
       </text>
     </svg>
   );
@@ -461,7 +461,7 @@ export const NeuralPipelineDiagramSvg: React.FC<{ className?: string }> = ({ cla
         <rect x="290" y="90" width="140" height="80" rx="12" fill="#250A3E" stroke="#981559" strokeWidth="2.5" />
         <text x="360" y="120" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="700">Emotion Engine</text>
         <text x="360" y="138" textAnchor="middle" fill="#FF2E93" fontSize="11" fontWeight="600">CNN + XGBoost</text>
-        <text x="360" y="153" textAnchor="middle" fill="#A895B8" fontSize="10">FER-2013 + Age Detect</text>
+        <text x="360" y="153" textAnchor="middle" fill="#A895B8" fontSize="10">FER-2013 + Real-Time</text>
       </g>
 
       {/* Block 3: Cognitive & Response Generation */}
@@ -476,7 +476,7 @@ export const NeuralPipelineDiagramSvg: React.FC<{ className?: string }> = ({ cla
       <g>
         <rect x="690" y="90" width="170" height="80" rx="12" fill="#120521" stroke="#00F2FE" strokeWidth="2.5" />
         <text x="775" y="120" textAnchor="middle" fill="#FFFFFF" fontSize="13" fontWeight="700">Biomechatronics</text>
-        <text x="775" y="138" textAnchor="middle" fill="#00F2FE" fontSize="11" fontWeight="600">17 Servos (InMoov V2)</text>
+        <text x="775" y="138" textAnchor="middle" fill="#00F2FE" fontSize="11" fontWeight="600">17 Actuators (InMoov V2)</text>
         <text x="775" y="153" textAnchor="middle" fill="#A895B8" fontSize="10">Ekman FACS Action Units</text>
       </g>
     </svg>

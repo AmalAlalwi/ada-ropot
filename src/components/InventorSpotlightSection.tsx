@@ -31,9 +31,9 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
   const [activeTab, setActiveTab] = useState<"about" | "skills" | "experience" | "impact" | "certs">("about");
 
   const skills = {
-    programming: ["Python (TensorFlow, OpenCV, MediaPipe)", "Arduino C / C++", "MATLAB", "ROS (Robot Operating System)"],
-    ai_ml: ["Facial Emotion Recognition (FER-2013)", "CNN + XGBoost Hybrid Models", "OpenAI Whisper ASR", "GPT-2 NLP Pipeline", "MediaPipe FaceMesh (468 pts)"],
-    hardware: ["InMoov V2 Robotic Assembly", "Biomechanical Actuators (17 Servos)", "SolidWorks 3D CAD & Printing", "Sensor Integration & PWM Bus"],
+    programming: ["Python (TensorFlow, OpenCV, MediaPipe)", "Arduino C / C++", "MATLAB", "ROS (Robot Operating System - مستوى مبتدئ / Beginner)"],
+    ai_ml: ["Facial Emotion Recognition (FER-2013)", "CNN + XGBoost Hybrid Models", "OpenAI Whisper ASR", "GPT-2 NLP Pipeline", "MediaPipe FaceMesh (468 pts Real-Time)"],
+    hardware: ["InMoov V2 Robotic Assembly", "Biomechanical Actuators (17 Servos: JX PDI-11098 9g & 6221MG 20kg)", "SolidWorks 3D CAD & Printing", "Arduino C++ & PWM Actuator Bus"],
     soft: ["Project Planning & Research", "Bilingual Communication (Arabic / English - C1)", "Time Management", "Creative Problem Solving"],
   };
 
@@ -52,15 +52,15 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
             }}
           >
             <Sparkles size={14} color="var(--accent-cyan)" />
-            {isAr ? "مبتكرة الفكرة والأبحاث" : "INVENTOR & RESEARCH LEAD"}
+            {isAr ? "مطورة الفكرة والأبحاث" : "DEVELOPER & RESEARCH LEAD"}
           </span>
           <h2 className="section-title">
             {isAr ? "المهندسة دعاء الابراهيم" : "Eng. Duaa Alibrahim"}
           </h2>
           <p className="section-desc" style={{ margin: "0 auto" }}>
             {isAr
-              ? "موقع ويب مصغر مخصص يستعرض سيرة مبتكرة روبوت أدا، وأبحاثها في الميكاترونيكس الحيوية، وخبرتها التقنية وإنجازاتها الإنسانية والأكاديمية."
-              : "A dedicated standalone portal presenting the inventor behind ADA Robot: research in biomechatronics, multimodal AI, and academic achievements."}
+              ? "موقع ويب مصغر مخصص يستعرض سيرة مطورة روبوت أدا، وأبحاثها في الميكاترونيكس الحيوية، وخبرتها التقنية وإنجازاتها الإنسانية والأكاديمية."
+              : "A dedicated standalone portal presenting the developer behind ADA Robot: research in biomechatronics, multimodal AI, and academic achievements."}
           </p>
         </div>
 
@@ -155,7 +155,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                     {isAr ? "المهندسة دعاء الابراهيم" : "Eng. Duaa Alibrahim"}
                   </div>
                   <div style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", marginTop: "2px" }}>
-                    AI Robotics Engineer | Human-Robot Interaction
+                    {isAr ? "مهندسة ميكاترونيكس (التخرج: أكتوبر 2026) | باحثة ومطورة ذكاء اصطناعي" : "Mechatronics Engineer (Grad: Oct 2026) | AI & Robotics Developer"}
                   </div>
                   <div style={{ fontSize: "0.78rem", color: "var(--text-lavender)", opacity: 0.85, marginTop: "4px" }}>
                     📍 Aleppo, Syria • University of Aleppo
@@ -168,7 +168,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                   <span className="badge-neural" style={{ borderColor: "#00F2FE", color: "#00F2FE" }}>
                     <ShieldCheck size={14} />
-                    {isAr ? "باحثة متخصصة في التفاعل الإنساني الروبوتي" : "HRI & BIOMECHATRONICS RESEARCHER"}
+                    {isAr ? "متخصصة في دمج البيوميكاترونيكس والذكاء الصنعي" : "BIOMECHATRONICS & AI RESEARCHER"}
                   </span>
                 </div>
 
@@ -180,27 +180,27 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
 
                 <p style={{ fontSize: "1rem", color: "var(--text-lavender)", lineHeight: "1.7" }}>
                   {isAr
-                    ? "مهندسة ميكاترونيكس في سنتها النهائية بجامعة حلب، وباحثة متخصصة في دمج علم وظائف الأعضاء البشري مع الميكاترونيكس الحيوية والذكاء الاصطناعي. قادت بنجاح ابتكار وتطوير رأس روبوت أدا (ADA Imitated Head) المعتمد على منصة InMoov V2 مع 17 محركاً يحاكي أدق تعابير الوجه البشري وفق نظرية بول إيكمان، مدعوماً برؤية حاسوبية فائقة الدقة عبر MediaPipe ونماذج تصنيف المشاعر الهجينة."
-                    : "Mechatronics Engineer in her final year at the University of Aleppo, dedicated to human-centered robotics and biomechatronics. Led the research and development of the 17-motor ADA Imitated Head (InMoov V2 platform), engineering the physical hardware and multimodal AI pipeline combining MediaPipe FaceMesh, CNN+XGBoost emotion recognition, Whisper voice recognition, and Paul Ekman FACS units."}
+                    ? "مهندسة ميكاترونيكس بجامعة حلب (التخرج: أكتوبر 2026)، متخصصة في دمج البيوميكاترونيكس والذكاء الصنعي لبناء نظام متكامل يحقق استجابة تفاعلية ومحاكاة دقيقة للمشاعر. طوّرت وهندست بنجاح رأس روبوت أدا (ADA Imitated Head) المعتمد على منصة InMoov V2 مع 17 مشغل سيرفو دقيق عالي العزم (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg تحاكي أدق تعابير الوجه البشري وفق نظرية بول إيكمان لوحدات الفعل الوجهي (FACS)، مدعوماً برؤية حاسوبية في الزمن الحقيقي عبر MediaPipe ونماذج تصنيف المشاعر الهجينة."
+                    : "Mechatronics Engineer at the University of Aleppo (Expected Graduation: October 2026), dedicated to integrating biomechatronics and artificial intelligence to build an end-to-end responsive system. Developed and engineered the 17-actuator ADA Imitated Head (InMoov V2 platform) utilizing precision servos (JX PDI-11098 9g & 6221MG 20kg) to replicate human emotional expressions based on Paul Ekman FACS Action Units, powered by real-time MediaPipe computer vision and hybrid emotion classification models."}
                 </p>
 
                 {/* Key Metric Highlights */}
                 <div className="duaa-metrics-grid">
                   <div>
                     <div style={{ fontSize: "1.3rem", fontWeight: "800", color: "var(--accent-magenta)" }}>
-                      17 Motors
+                      17 Actuators
                     </div>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-                      {isAr ? "رأس أدا البيوميكاترونيكي" : "ADA Facial Actuators"}
+                      {isAr ? "مشغلات سيرفو JX PDI" : "ADA Facial Actuators"}
                     </div>
                   </div>
 
                   <div>
                     <div style={{ fontSize: "1.3rem", fontWeight: "800", color: "var(--accent-cyan)" }}>
-                      3.25 / 4.0
+                      Top 5 Syria
                     </div>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-                      {isAr ? "معدل GPA جامعة حلب" : "Aleppo University GPA"}
+                      {isAr ? "ميدالية فضية - تكنوقراط" : "Silver Medal Technocrats"}
                     </div>
                   </div>
 
@@ -387,40 +387,40 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
                     <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "قائدة مشروع رأس روبوت أدا (ADA Imitated Head)" : "Lead Developer — ADA Imitated Head Robotic Project"}
+                      {isAr ? "مطورة مشروع رأس روبوت أدا (ADA Imitated Head)" : "Lead Developer — ADA Imitated Head Robotic Project"}
                     </h4>
                     <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
                       April 2023 – Present
                     </span>
                   </div>
                   <div style={{ fontSize: "0.88rem", color: "var(--accent-magenta)", fontWeight: "600", marginTop: "4px" }}>
-                    Junior Mechatronics Engineer | Robotics & AI Researcher
+                    Junior Mechatronics Engineer (Grad: Oct 2026) | Robotics & AI Developer
                   </div>
                   <ul style={{ marginTop: "14px", paddingLeft: isAr ? "0" : "20px", paddingRight: isAr ? "20px" : "0", display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.92rem", color: "var(--text-lavender)" }}>
                     <li>
                       {isAr
-                        ? "قيادة تطوير رأس روبوت أدا المحاكي للوجه البشري، مدمجاً منصة InMoov V2 مع الذكاء الاصطناعي متعدد الوسائط للتفاعل المباشر."
+                        ? "تطوير وهندسة رأس روبوت أدا المحاكي للوجه البشري، مدمجاً هيكل InMoov V2 مع الذكاء الاصطناعي متعدد الوسائط للتفاعل المباشر في الزمن الحقيقي (Real time)."
                         : "Led development of ADA Imitated Head integrating InMoov V2 platform with multimodal AI systems for real-time human-robot interaction."}
                     </li>
                     <li>
                       {isAr
-                        ? "تطبيق نظرية بول إيكمان لوحدات الفعل الوجهي (FACS) وتشريح عضلات الوجه عبر 17 محركاً بتقنيات الطباعة ثلاثية الأبعاد والتجميع الميكانيكي."
-                        : "Applied Paul Ekman's Action Units theory and facial anatomy using InMoov V2 through 3D printing and precision assembly to map realistic human expressions."}
+                        ? "تطبيق نظرية بول إيكمان لوحدات الفعل الوجهي (FACS) وتشريح عضلات الوجه عبر 17 مشغل سيرفو دقيق عالي العزم (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg مبرمجة بلغة Arduino C++ ومربوطة بالنموذج النهائي MediaPipe."
+                        : "Applied Paul Ekman's Action Units (FACS) theory and facial anatomy using 17 precision actuators (JX PDI-11098 9g & 6221MG 20kg servos) programmed via Arduino C++ and integrated with the final MediaPipe model."}
                     </li>
                     <li>
                       {isAr
-                        ? "تطوير نموذج تصنيف هجين يجمع بين CNN و XGBoost بالاعتماد على قاعدة FER-2013 وتتبع نقاط MediaPipe FaceMesh."
-                        : "Developed CNN+XGBoost hybrid model for emotion classification using FER-2013 dataset and MediaPipe FaceMesh for facial landmark detection."}
+                        ? "تطوير نموذج تصنيف هجين يجمع بين CNN و XGBoost بالاعتماد على قاعدة FER-2013 وتتبع نقاط MediaPipe FaceMesh في الزمن الحقيقي."
+                        : "Developed CNN+XGBoost hybrid model for emotion classification using FER-2013 dataset and real-time MediaPipe FaceMesh."}
                     </li>
                     <li>
                       {isAr
-                        ? "بناء وتكامل خط أنابيب ذكاء اصطناعي صوتي ومحادثاتي كامل: Whisper ASR، GPT-2 NLP، وتوليف صوتي عبر gTTS وتطبيق تحكم عبر Telegram Bot."
-                        : "Integrated complete AI pipeline: Whisper ASR, GPT-2 NLP, gTTS voice synthesis, and Telegram bot for real-time interactive dialogue."}
+                        ? "بناء وتكامل خط أنابيب ذكاء اصطناعي صوتي ومحادثاتي كامل: Whisper ASR، GPT-2 NLP، وتوليف صوتي عبر gTTS مع بوت تلجرام (نموذج أولي للاختبار فقط)."
+                        : "Integrated AI pipeline: Whisper ASR, GPT-2 NLP, gTTS voice synthesis, and Telegram bot (initial prototype for testing only)."}
                     </li>
                   </ul>
                 </div>
 
-                {/* Role 2: Industry Training */}
+                {/* Role 2: Syrian Technocrats Foundation */}
                 <div
                   style={{
                     background: "rgba(14, 4, 27, 0.8)",
@@ -432,19 +432,47 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
                     <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "برنامج التدريب العملي الصناعي" : "Industrial Practical Training Program"}
+                      {isAr ? "الميدالية الفضية - مؤسسة التكنوقراط السوريون" : "Silver Medal Winner — Syrian Technocrats Foundation"}
+                    </h4>
+                    <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
+                      2024 - 2025
+                    </span>
+                  </div>
+                  <div style={{ fontSize: "0.88rem", color: "var(--accent-cyan)", fontWeight: "600", marginTop: "4px" }}>
+                    Top 5 Syrian Entrepreneurial Engineering Projects
+                  </div>
+                  <p style={{ marginTop: "10px", fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
+                    {isAr
+                      ? "الحصول على الميدالية الفضية من مؤسسة التكنوقراط السوريون ضمن ترتيب الـ Top 5 بمشاريع الهندسة الكهربائية والميكانيكية الريادية على مستوى سوريا."
+                      : "Honored with the Silver Medal and ranked among the Top 5 pioneering electrical and mechanical engineering entrepreneurial projects across Syria."}
+                  </p>
+                </div>
+
+                {/* Role 3: Industry Orientation */}
+                <div
+                  style={{
+                    background: "rgba(14, 4, 27, 0.8)",
+                    borderLeft: "4px solid #10B981",
+                    borderRight: isAr ? "4px solid #10B981" : "none",
+                    borderRadius: "var(--radius-md)",
+                    padding: "24px",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
+                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
+                      {isAr ? "اطلاع وتدريب عملي ميداني" : "Industrial Field Practical Orientation"}
                     </h4>
                     <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
                       2024
                     </span>
                   </div>
-                  <div style={{ fontSize: "0.88rem", color: "var(--accent-cyan)", fontWeight: "600", marginTop: "4px" }}>
+                  <div style={{ fontSize: "0.88rem", color: "#10B981", fontWeight: "600", marginTop: "4px" }}>
                     Aleppo Chamber of Industry & University of Aleppo
                   </div>
                   <p style={{ marginTop: "10px", fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
                     {isAr
-                      ? "تدريب مكثف على صيانة وبرمجة خطوط الإنتاج الذكية، ومتحكمات الـ PLC، وتطبيقات الجودة ومطابقة معايير ISO 9001:2015."
-                      : "Hands-on industrial automation, PLC microcontrollers, quality assurance systems, and ISO 9001:2015 quality management compliance."}
+                      ? "اطلاع وتدريب عملي ميداني للتعرف على المعامل والآلات الصناعية وخطوط الإنتاج ومتحكماتها بالتعاون بين غرفة صناعة حلب وجامعتها."
+                      : "Field practical orientation visiting industrial manufacturing plants, production equipment, and automation lines."}
                   </p>
                 </div>
 
@@ -479,13 +507,13 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
                     <Heart size={22} color="#10B981" />
                     <h4 style={{ fontSize: "1.15rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "إغاثة متضرري زلزال 2023 التعليمية" : "2023 Earthquake Relief Education"}
+                      {isAr ? "تدريس رياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال" : "High School Math Tutoring During Earthquake Crisis"}
                     </h4>
                   </div>
                   <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
                     {isAr
-                      ? "التطوع لتعليم ودعم أكثر من 400 طالب وطالبة من المتأثرين بالزلزال عبر تيليغرام وواتساب، وابتكار تسجيلات صوتية وأوراق عمل ومساندة نفسية لمساعدتهم على تجاوز الصدمات وإكمال مسيرتهم الأكاديمية."
-                      : "Volunteered during the tragic earthquake crisis, supporting 400+ Syrian students via Telegram/WhatsApp with custom audio notes, worksheets, and psychological coaching to overcome trauma and excel academically."}
+                      ? "التطوع لتدريس الرياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال، وتقديم الدعم النفسي والأكاديمي لأكثر من 400 طالب وطالبة عبر تيليغرام وواتساب بتسجيلات صوتية وأوراق عمل لمساعدتهم على اجتياز الصدمات واستكمال تحصيلهم العلمي بنجاح."
+                      : "Volunteered tutoring high school mathematics during the 2023 earthquake disaster, supporting 400+ Syrian students via Telegram and WhatsApp with tailored audio recordings, worksheets, and psychological coaching to overcome trauma and continue learning."}
                   </p>
                 </div>
 
@@ -500,13 +528,13 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
                     <BookOpen size={22} color="#F59E0B" />
                     <h4 style={{ fontSize: "1.15rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "تعليم الرياضيات واللغات للأطفال" : "Math Passion Builder & Bilingual Educator"}
+                      {isAr ? "متطوعة مع منظمة الطائرات الورقية (Paper Airplanes)" : "Volunteer with Paper Airplanes Organization"}
                     </h4>
                   </div>
                   <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
                     {isAr
-                      ? "تدريس الرياضيات بأساليب تبسيط مبتكرة (2018 - 2024)، والتعليم ثنائي اللغة (عربي - إنجليزي) للأطفال وتدريس الرسم الإبداعي، مما ساهم في صقل مهارات التواصل الإنساني التي ألهمت لاحقاً بناء تعابير روبوت أدا."
-                      : "Private math tutoring (2018–2024) utilizing bespoke visual learning methodologies, combined with bilingual English-Arabic teaching and fine arts drawing instruction, directly inspiring the expressive facial empathy of ADA."}
+                      ? "التطوع لتدريس اللغة الإنجليزية للمبتدئين مع منظمة Paper Airplanes، وتمكين الشباب من اكتساب المهارات اللغوية وبناء الثقة في التواصل الأكاديمي، إلى جانب شغف تبسيط وتدريس الرياضيات للأطفال واليافعين (2018 - 2024)."
+                      : "Volunteered with Paper Airplanes teaching beginner English, empowering students with fundamental communication skills and cross-cultural confidence, along with 6+ years of private math instruction (2018–2024)."}
                   </p>
                 </div>
               </div>
@@ -520,7 +548,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
             <div className="duaa-tab-body">
               <div style={{ marginBottom: "26px" }}>
                 <h3 style={{ fontSize: "1.5rem", fontWeight: "700", color: "#FFFFFF" }}>
-                  {isAr ? "الدرجات الأكاديمية والشهادات التخصصية" : "Academic Degrees & Certifications"}
+                  {isAr ? "الدرجات الأكاديمية والشهادات والجوائز" : "Academic Degrees, Certifications & Honors"}
                 </h3>
               </div>
 
@@ -529,14 +557,32 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   {
                     title: "Bachelor of Mechatronics Engineering",
                     org: "University of Aleppo (Faculty of Electrical & Electronics)",
-                    date: "Expected 2026 • GPA 3.25 / 4.0",
-                    badge: "Final Year Honor",
+                    date: "Expected October 2026 • GPA 3.25 / 4.0",
+                    badge: "Graduating Oct 2026",
+                  },
+                  {
+                    title: "Silver Medal Winner — Top 5 in Syria",
+                    org: "Syrian Technocrats Foundation (مؤسسة التكنوقراط السوريون)",
+                    date: "2024 - 2025",
+                    badge: "Top 5 Syria Engineering Projects",
                   },
                   {
                     title: "Exhibition Award Winner (HEMK 2025)",
                     org: "Damascus Faculty of Mechanical & Electrical Engineering",
                     date: "2025",
-                    badge: "One of Aleppo's Best Engineering Projects",
+                    badge: "Aleppo University Best Projects",
+                  },
+                  {
+                    title: "Business Analytics Level 1 (Excel)",
+                    org: "Paper Airplanes International Organization",
+                    date: "Verified Certification",
+                    badge: "Analytics & Excel",
+                  },
+                  {
+                    title: "Paper Airplanes Volunteer & English Educator",
+                    org: "Paper Airplanes International Organization",
+                    date: "2024 - 2026",
+                    badge: "Beginner English Teaching",
                   },
                   {
                     title: "English Proficiency Certificate C1",
@@ -549,12 +595,6 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                     org: "Quality Systems Workshop, Aleppo",
                     date: "2024",
                     badge: "Verified ISO Standard",
-                  },
-                  {
-                    title: "Paper Airplanes English Certificates B1/B2",
-                    org: "Paper Airplanes International Organization",
-                    date: "2024 - 2026",
-                    badge: "Advanced Fluency",
                   },
                   {
                     title: "ACPC Competitive Programming Contest",

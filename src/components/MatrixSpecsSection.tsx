@@ -11,11 +11,11 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
   const isAr = lang === "ar";
 
   const specs = [
-    { labelEn: "Facial Degrees of Freedom (DOF)", labelAr: "درجات الحرية الحركية (DOF)", val: "17 Motors", sub: "InMoov V2 Biomimetic Topology" },
-    { labelEn: "Facial Landmark Resolution", labelAr: "دقة شبكة تتبع الوجه", val: "468 Keypoints", sub: "MediaPipe 3D Mesh Tracking" },
+    { labelEn: "Facial Degrees of Freedom (DOF)", labelAr: "درجات الحرية الحركية (DOF)", val: "17 Actuators", sub: "JX PDI-11098 9g & 6221MG 20kg Servos" },
+    { labelEn: "Facial Landmark Resolution", labelAr: "دقة شبكة تتبع الوجه", val: "468 Keypoints", sub: "MediaPipe 3D Mesh (Real time)" },
     { labelEn: "Emotion Recognition Latency", labelAr: "زمن استجابة تصنيف المشاعر", val: "< 45 ms", sub: "Hybrid CNN + XGBoost Execution" },
-    { labelEn: "Microcontroller Bus", labelAr: "ناقل التحكم الإلكتروني", val: "Dual Arduino C++", sub: "PWM Interpolated Servo Control" },
-    { labelEn: "Chassis Fabrication", labelAr: "تصنيع الهيكل الخارجي", val: "PLA+ 3D Printing", sub: "Reinforced SolidWorks Assembly" },
+    { labelEn: "Microcontroller Bus", labelAr: "ناقل التحكم الإلكتروني", val: "Arduino C++", sub: "PWM Interpolated Actuator Bus" },
+    { labelEn: "Chassis Fabrication", labelAr: "تصنيع الهيكل الخارجي", val: "PLA+ 3D Printing", sub: "InMoov V2 SolidWorks Assembly" },
     { labelEn: "Voice Pipeline", labelAr: "المعالجة والتوليف الصوتي", val: "Full-Duplex", sub: "Whisper ASR + GPT-2 + gTTS" },
   ];
 
@@ -25,14 +25,14 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
       titleEn: "Faculty Exhibition Award — Damascus HEMK",
       titleAr: "جائزة معرض كلية الهندسة الميكانيكية والكهربائية (HEMK) - دمشق",
       descEn: "Recognized as 'One of Aleppo University's Best Engineering Projects' for groundbreaking integration of biomechatronics and emotional AI.",
-      descAr: "تم تكريم المشروع كأحد أفضل مشاريع جامعة حلب الهندسية للدمج المبتكر بين الميكاترونيكس الحيوية والذكاء الاصطناعي العاطفي.",
+      descAr: "تم تكريم المشروع كأحد أفضل مشاريع جامعة حلب الهندسية للدمج المتطور بين الميكاترونيكس الحيوية والذكاء الاصطناعي التفاعلي.",
     },
     {
       year: "2024",
-      titleEn: "Aleppo Chamber of Industry Practical Training",
-      titleAr: "برنامج التدريب العملي - غرفة صناعة حلب وجامعتها",
-      descEn: "Applied robotic systems integration, industrial microcontrollers, and electronic design methodologies.",
-      descAr: "تطبيق عملي لتكامل الأنظمة الروبوتية، والمتحكمات الصناعية، ومنهجيات التصميم الإلكتروني الدقيق.",
+      titleEn: "Silver Medal — Syrian Technocrats Foundation",
+      titleAr: "الميدالية الفضية - مؤسسة التكنوقراط السوريون",
+      descEn: "Awarded Silver Medal and ranked among the Top 5 pioneering electrical and mechanical engineering entrepreneurial projects across Syria.",
+      descAr: "حاصلة على الميدالية الفضية من مؤسسة التكنوقراط السوريون ضمن ترتيب الـ Top 5 بمشاريع الهندسة الكهربائية والميكانيكية الريادية على مستوى سوريا.",
     },
   ];
 

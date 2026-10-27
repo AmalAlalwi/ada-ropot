@@ -10,13 +10,31 @@ import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/layouts/Footer";
 
 export default function Home() {
-  const [lang, setLang] = useState<"ar" | "en">("en");
+  const [lang, setLang] = useState<"ar" | "en">("ar");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
-  // Sync HTML dir and lang attributes on change
+  // Load saved theme preference on mount
+  useEffect(() => {
+    try {
+      const savedTheme = localStorage.getItem("ada_theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        setTheme(savedTheme);
+      }
+    } catch {}
+  }, []);
+
+  // Sync HTML dir, lang, and theme attributes on change
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   }, [lang]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    try {
+      localStorage.setItem("ada_theme", theme);
+    } catch {}
+  }, [theme]);
 
   return (
     <div style={{ position: "relative", minHeight: "100vh", overflowX: "hidden" }}>
@@ -29,6 +47,8 @@ export default function Home() {
       <Navbar
         lang={lang}
         setLang={setLang}
+        theme={theme}
+        setTheme={setTheme}
       />
 
       {/* Main Content Sections */}

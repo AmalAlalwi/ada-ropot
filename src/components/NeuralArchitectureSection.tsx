@@ -18,9 +18,9 @@ export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ l
       titleAr: "الرؤية الحاسوبية وتتبع الملامح (MediaPipe)",
       tech: "MediaPipe 468 Landmark Mesh",
       descEn:
-        "High-frequency ocular and facial tracking processing 468 3D landmarks in real time. Accurately extracts micro-expressions, head pose, and facial muscle vectors even under variable ambient lighting.",
+        "High-frequency ocular and facial tracking processing 468 3D landmarks in real time. Accurately extracts micro-expressions, head pose, and facial muscle vectors in real time.",
       descAr:
-        "نظام رؤية حاسوبية عالي التردد يرصد 468 نقطة ثلاثية الأبعاد على الوجه في الوقت الفعلي. يستخرج التعبيرات الدقيقة وزوايا إمالة الرأس حتى في ظروف الإضاءة المتغيرة.",
+        "نظام رؤية حاسوبية عالي التردد يرصد 468 نقطة ثلاثية الأبعاد على الوجه في الزمن الحقيقي Real time، ويستخرج التعبيرات الدقيقة وزوايا إمالة الرأس في الزمن الحقيقي Real time.",
     },
     {
       icon: <Brain size={24} color="#FF2E93" />,
@@ -38,19 +38,19 @@ export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ l
       titleAr: "المعالجة الصوتية والمحادثة الذكية",
       tech: "Whisper ASR + GPT-2 + gTTS",
       descEn:
-        "Full-duplex voice pipeline combining OpenAI Whisper for noise-resilient automatic speech recognition, GPT-2 conversational reasoning, and high-fidelity vocal synthesis.",
+        "Full-duplex voice pipeline combining OpenAI Whisper for noise-resilient automatic speech recognition, GPT-2 conversational reasoning, gTTS voice synthesis, and a Telegram bot (prototype for testing only).",
       descAr:
-        "معالجة صوتية متكاملة تدمج نموذج Whisper للتعرف الآلي على الكلام المعزول عن الضوضاء، ومحرك GPT-2 للمحادثة التفاعلية، والتوليف الصوتي عبر gTTS متزامناً مع روبوت Telegram.",
+        "معالجة صوتية متكاملة تدمج نموذج Whisper للتعرف الآلي على الكلام المعزول عن الضوضاء، ومحرك GPT-2 للمحادثة التفاعلية، والتوليف الصوتي عبر gTTS، مع بوت تلجرام (نموذج أولي للاختبار فقط).",
     },
     {
       icon: <Cpu size={24} color="#10B981" />,
-      titleEn: "Hardware Actuation & Servo Bus",
-      titleAr: "التحكم العتادي ومصفوفة السيرفو",
-      tech: "InMoov V2 Assembly + Arduino C++ & ROS",
+      titleEn: "Hardware Actuation & Actuator Matrix",
+      titleAr: "التحكم العتادي ومصفوفة المشغلات (Actuators)",
+      tech: "InMoov V2 Assembly + Arduino C++ & MediaPipe",
       descEn:
-        "17 high-torque micro-servos mapped strictly to Paul Ekman's Facial Action Coding System (FACS). Driven by microcontrollers with smooth trajectory interpolation.",
+        "17 high-torque precision actuators (JX PDI-11098 9g & JX PDI-6221MG 20kg servos) programmed in Arduino C++ and integrated with the final MediaPipe model, engineered according to Paul Ekman's FACS and Action Units to replicate anatomical muscle contractions.",
       descAr:
-        "17 محرك سيرفو دقيق عالي العزم مبرمج بلغة Arduino C++ وبنية ROS، مربوطة هندسياً وفق نظام FACS لعالم النفس بول إيكمان لإنتاج حركات وجهية طبيعية وسلسة.",
+        "17 مشغل سيرفو دقيق عالي العزم (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg مبرمج بلغة Arduino C++ ومربوط بالنموذج النهائي MediaPipe، مربوطة هندسياً وفق نظام FACS لعالم النفس بول إيكمان لتقليد تعابير الوجه بالاعتماد على نظام Action Units (ملاحقة التقلصات العضلية في البنية التشريحية للوجه للتعرف على المشاعر).",
     },
   ];
 

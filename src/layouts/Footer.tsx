@@ -30,8 +30,8 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
             <AdaLogo variant="gradient" width={160} height={70} />
             <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
               {isAr
-                ? "روبوت أدا (ADA Robot) - منصة الروبوتات الحيوية والذكاء الاصطناعي التفاعلي متعدد الوسائط بمحاكاة 17 عضلة وجهية بشرية."
-                : "ADA Robot — Biomechatronic 17-motor facial robotic system with real-time multimodal AI emotion recognition."}
+                ? "روبوت أدا (ADA Robot) - منصة الروبوتات الحيوية والذكاء الاصطناعي التفاعلي متعدد الوسائط بمحاكاة 17 مشغل سيرفو (Actuators) لعضلات الوجه البشري."
+                : "ADA Robot — Biomechatronic 17-actuator facial robotic system with real-time multimodal AI emotion recognition."}
             </p>
             <div style={{ fontSize: "0.82rem", color: "var(--accent-magenta)", fontStyle: "italic" }}>
               {isAr ? "« إننا نهمس بالأمل »" : "« Designed to understand »"}
@@ -56,11 +56,11 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
           {/* Col 3: Research & Creator */}
           <div>
             <h4 style={{ fontSize: "1rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "16px" }}>
-              {isAr ? "مبتكرة الفكرة والأبحاث" : "Inventor & Research"}
+              {isAr ? "مطورة المشروع والأبحاث" : "Developer & Research"}
             </h4>
             <p style={{ fontSize: "0.88rem", color: "var(--text-lavender)", lineHeight: "1.6", marginBottom: "10px" }}>
               <strong>{isAr ? "المهندسة دعاء الابراهيم" : "Eng. Duaa Alibrahim"}</strong><br />
-              {isAr ? "مهندسة ميكاترونيكس وباحثة ذكاء اصطناعي" : "AI Robotics & Biomechatronics Researcher"}<br />
+              {isAr ? "مهندسة ميكاترونيكس (التخرج: أكتوبر 2026) وباحثة ذكاء اصطناعي" : "Mechatronics Engineer (Grad: Oct 2026) & AI Robotics Researcher"}<br />
               <span style={{ fontSize: "0.82rem", color: "var(--text-muted)" }}>
                 {isAr ? "جامعة حلب - كلية الهندسة الكهربائية والإلكترونية" : "University of Aleppo — EEE Faculty"}
               </span>
@@ -76,11 +76,11 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="mailto:duaa.alibrahim@alepuniv.edu.sy"
+                href="mailto:duaaalibrahim6@gmail.com"
                 style={{ color: "var(--text-lavender)", display: "inline-flex", alignItems: "center", gap: "4px", fontSize: "0.82rem" }}
               >
                 <Mail size={14} />
-                <span>University Mail</span>
+                <span>{isAr ? "البريد المباشر" : "Direct Email"}</span>
               </a>
             </div>
           </div>

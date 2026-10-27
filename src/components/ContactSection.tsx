@@ -43,7 +43,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
             {isAr ? "قنوات التواصل والشراكة" : "Connect & Collaborate"}
           </span>
           <h2 className="section-title">
-            {isAr ? "تواصل مع مبتكرة روبوت أدا" : "Initiate Direct Collaboration"}
+            {isAr ? "تواصل مع مطورة روبوت أدا" : "Initiate Direct Collaboration"}
           </h2>
           <p className="section-desc" style={{ margin: "0 auto" }}>
             {isAr
@@ -70,50 +70,19 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
               </h3>
               <p style={{ fontSize: "0.92rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
                 {isAr
-                  ? "يمكنك التواصل مباشرة مع المهندسة دعاء الابراهيم عبر بريدها الجامعي أو الشخصي أو حسابها على لينكد إن."
-                  : "Reach Eng. Duaa Alibrahim directly through her official university email, personal inbox, or LinkedIn network."}
+                  ? "يمكنك التواصل مباشرة مع المهندسة دعاء الابراهيم عبر بريدها المباشر أو حسابها على لينكد إن أو الهاتف."
+                  : "Reach Eng. Duaa Alibrahim directly through her direct inbox, LinkedIn network, or mobile."}
               </p>
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              {/* Univ Email */}
-              <div className="contact-card-item">
-                <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1 }}>
-                  <Mail size={20} color="var(--accent-cyan)" style={{ flexShrink: 0 }} />
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", textTransform: "uppercase" }}>
-                      {isAr ? "البريد الجامعي (جامعة حلب)" : "University of Aleppo Email"}
-                    </div>
-                    <a
-                      href="mailto:duaa.alibrahim@alepuniv.edu.sy"
-                      style={{ fontSize: "0.92rem", color: "#FFFFFF", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
-                    >
-                      duaa.alibrahim@alepuniv.edu.sy
-                    </a>
-                  </div>
-                </div>
-                <button
-                  onClick={() => handleCopy("duaa.alibrahim@alepuniv.edu.sy", "univ")}
-                  style={{
-                    background: "transparent",
-                    border: "none",
-                    color: copiedItem === "univ" ? "var(--accent-green)" : "var(--text-muted)",
-                    cursor: "pointer",
-                    padding: "6px",
-                  }}
-                  title="Copy email"
-                >
-                  {copiedItem === "univ" ? <CheckCircle2 size={18} /> : <Copy size={18} />}
-                </button>
-              </div>
-
-              {/* Personal Email */}
+              {/* Direct Personal Email */}
               <div className="contact-card-item">
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1 }}>
                   <Mail size={20} color="var(--accent-magenta)" style={{ flexShrink: 0 }} />
                   <div style={{ minWidth: 0, flex: 1 }}>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", textTransform: "uppercase" }}>
-                      {isAr ? "البريد المباشر" : "Direct Inbox"}
+                      {isAr ? "البريد الإلكتروني المباشر" : "Direct Email Inbox"}
                     </div>
                     <a
                       href="mailto:duaaalibrahim6@gmail.com"

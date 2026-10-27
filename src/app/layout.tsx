@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | ADA Robot",
   },
   description:
-    "Official portfolio for ADA Robot, an advanced 17-motor biomechatronic head (InMoov V2) with multimodal AI emotion recognition, created by Syrian Mechatronics Engineer Duaa Alibrahim (University of Aleppo). الموقع الرسمي لروبوت أدا والمهندسة دعاء الابراهيم.",
+    "Official portfolio for ADA Robot, an advanced 17-actuator biomechatronic head (InMoov V2) with multimodal AI emotion recognition, created by Syrian Mechatronics Engineer Duaa Alibrahim (University of Aleppo). الموقع الرسمي لروبوت أدا والمهندسة دعاء الابراهيم.",
   keywords: siteConfig.keywords,
   authors: [{ name: "Eng. Duaa Alibrahim", url: "https://linkedin.com/in/duaa-alibrahim" }],
   creator: "Eng. Duaa Alibrahim (المهندسة دعاء الابراهيم)",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: "ADA Robot | Designed to Understand — Eng. Duaa Alibrahim",
     description:
-      "Advanced 17-motor InMoov V2 biomechatronic facial robotic head with real-time MediaPipe and CNN+XGBoost emotion recognition by Eng. Duaa Alibrahim.",
+      "Advanced 17-actuator InMoov V2 biomechatronic facial robotic head with real-time MediaPipe and CNN+XGBoost emotion recognition by Eng. Duaa Alibrahim.",
     siteName: "ADA Robot Portfolio",
     images: [
       {
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ADA Robot & Eng. Duaa Alibrahim (روبوت أدا)",
     description:
-      "17-motor biomechatronic robotic head mimicking human facial muscles with multimodal AI emotion recognition.",
+      "17-actuator biomechatronic robotic head mimicking human facial muscles with multimodal AI emotion recognition.",
     images: ["/images/ada_hero_cybernetic.jpg"],
   },
   alternates: {

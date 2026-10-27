@@ -6,9 +6,9 @@ export const siteConfig = {
   title: "ADA Robot — Biomechatronic AI Facial Robotic System & Eng. Duaa Alibrahim",
   titleAr: "روبوت أدا — نظام الروبوتات الحيوية والذكاء الاصطناعي التفاعلي | المهندسة دعاء الابراهيم",
   description:
-    "Official portfolio for ADA Robot, an advanced 17-motor biomechatronic head (InMoov V2) with multimodal AI emotion recognition, created by Syrian Mechatronics Engineer Duaa Alibrahim.",
+    "Official portfolio for ADA Robot, an advanced 17-actuator biomechatronic head (InMoov V2) with multimodal AI emotion recognition, engineered by Syrian Mechatronics Engineer Duaa Alibrahim.",
   descriptionAr:
-    "الموقع الرسمي لمشروع روبوت أدا (ADA Robot) - رأس روبوتي تفاعلي بـ 17 محرك يحاكي عضلات الوجه البشري مع ذكاء اصطناعي متعدد الوسائط لتمييز المشاعر، ابتكار المهندسة دعاء الابراهيم (جامعة حلب).",
+    "الموقع الرسمي لمشروع روبوت أدا (ADA Robot) - رأس روبوتي تفاعلي بـ 17 مشغل سيرفو يحاكي عضلات الوجه البشري مع ذكاء اصطناعي متعدد الوسائط لتمييز المشاعر في الزمن الحقيقي، تطوير المهندسة دعاء الابراهيم (جامعة حلب).",
   url: "https://ada-robot.ai",
   keywords: [
     "ADA Robot",
@@ -28,12 +28,11 @@ export const siteConfig = {
     "University of Aleppo Mechatronics",
     "Syrian AI Robotics",
     "Paul Ekman Action Units",
-    "17-motor robotic head",
+    "17-actuator robotic head",
     "Whisper ASR GPT-2 robot"
   ],
   links: {
     linkedin: "https://linkedin.com/in/duaa-alibrahim",
-    emailUniv: "duaa.alibrahim@alepuniv.edu.sy",
     emailPersonal: "duaaalibrahim6@gmail.com",
     phone: "+963-998-962774",
     location: "Aleppo, Syria"
@@ -51,8 +50,8 @@ export function generateStructuredData() {
       "المهندسة دعاء الابراهيم",
       "Eng. Duaa Alibrahim"
     ],
-    "jobTitle": "AI Robotics Engineer & Human-Robot Interaction Specialist",
-    "description": "Syrian mechatronics engineer, researcher in biomechatronics and multimodal AI. Inventor and lead developer of the ADA Imitated Head robotic project.",
+    "jobTitle": "Mechatronics Engineer (Grad: Oct 2026) & AI Robotics Researcher",
+    "description": "Syrian mechatronics engineer (graduating October 2026), researcher in biomechatronics and multimodal AI. Developer of the ADA Imitated Head robotic project.",
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "University of Aleppo - Faculty of Electrical and Electronic Engineering"
@@ -68,6 +67,7 @@ export function generateStructuredData() {
     ],
     "award": [
       "Damascus HEMK 2025 Exhibition Award - One of Aleppo University's Best Engineering Projects",
+      "Silver Medal Winner - Syrian Technocrats Foundation (Ranked Top 5 in Syria)",
       "English Proficiency Certificate C1 - Eduidea Institute"
     ],
     "address": {
@@ -89,7 +89,7 @@ export function generateStructuredData() {
     "alternateName": ["روبوت أدا", "أدا روبوت", "ADA Imitated Head"],
     "category": "Robotics / Artificial Intelligence / Human-Robot Interaction",
     "slogan": "Designed to Understand | إننا نهمس بالأمل",
-    "description": "An advanced 17-motor biomechatronic robotic head mimicking human facial muscles using Paul Ekman Action Units, integrated with real-time MediaPipe facial analysis, CNN+XGBoost emotion recognition, Whisper ASR, and GPT-2 conversational intelligence.",
+    "description": "An advanced 17-actuator biomechatronic robotic head mimicking human facial muscles using Paul Ekman Action Units, integrated with real-time MediaPipe facial analysis, CNN+XGBoost emotion recognition, Whisper ASR, and GPT-2 conversational intelligence.",
     "brand": {
       "@type": "Brand",
       "name": "ADA Robot"
@@ -110,15 +110,15 @@ export function generateStructuredData() {
         "name": "ما هو روبوت أدا (ADA Robot)؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "روبوت أدا (ADA Robot) هو رأس روبوتي بيوميكاترونيكي متطور مزود بـ 17 محركاً يحاكي عضلات الوجه البشري وفق نظرية Paul Ekman لوحدات الفعل الوجهي (FACS)، مدمج بنظام ذكاء اصطناعي متعدد الوسائط لتحليل المشاعر والتفاعل الصوتي والتعبيري الفوري."
+          "text": "روبوت أدا (ADA Robot) هو رأس روبوتي بيوميكاترونيكي متطور مزود بـ 17 مشغل سيرفو دقيق (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg يحاكي عضلات الوجه البشري وفق نظرية Paul Ekman لوحدات الفعل الوجهي (FACS)، مدمج بنظام ذكاء اصطناعي متعدد الوسائط لتحليل المشاعر والتفاعل الصوتي والتعبيري في الزمن الحقيقي."
         }
       },
       {
         "@type": "Question",
-        "name": "من هي مبتكرة روبوت أدا؟ / Who is the creator of ADA Robot?",
+        "name": "من هي مطورة روبوت أدا؟ / Who is the developer of ADA Robot?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "المهندسة دعاء الابراهيم (Duaa Alibrahim)، مهندسة ميكاترونيكس وباحثة في الذكاء الاصطناعي والتفاعل بين الإنسان والروبوت في جامعة حلب، الحائزة على تكريم معرض HEMK في دمشق لأفضل مشاريع جامعة حلب الهندسية."
+          "text": "المهندسة دعاء الابراهيم (Duaa Alibrahim)، مهندسة ميكاترونيكس (التخرج: أكتوبر 2026) وباحثة في الذكاء الاصطناعي والتفاعل بين الإنسان والروبوت في جامعة حلب، حائزة على الميدالية الفضية من مؤسسة التكنوقراط السوريون وتكريم معرض HEMK في دمشق لأفضل مشاريع جامعة حلب الهندسية."
         }
       },
       {
@@ -126,7 +126,7 @@ export function generateStructuredData() {
         "name": "ما هي التقنيات البرمجية والعتادية المستخدمة في أدا؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "تعتمد أدا على منصة InMoov V2 المعدلة، شبكات CNN+XGBoost مصنفة للبيانات الوجهية FER-2013 مع MediaPipe FaceMesh، نموذج Whisper للتعرف الصوتي، GPT-2 للمحادثة، وتطبيق تحكم عبر Arduino C++ و ROS."
+          "text": "تعتمد أدا على هيكل InMoov V2 المعدل، 17 مشغل سيرفو JX PDI مبرمجة عبر Arduino C++ ومربوطة بالنموذج النهائي MediaPipe FaceMesh في الزمن الحقيقي، شبكات CNN+XGBoost مصنفة للبيانات الوجهية FER-2013، ونموذج Whisper للتعرف الصوتي مع GPT-2 وبوت تلجرام للاختبار."
         }
       }
     ]

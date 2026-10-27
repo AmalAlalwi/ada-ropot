@@ -1,15 +1,17 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Globe, ArrowUpRight, Menu, X, Cpu, Sparkles } from "lucide-react";
+import { Globe, ArrowUpRight, Menu, X, Cpu, Sparkles, Sun, Moon } from "lucide-react";
 import { AdaLogo } from "./AdaSvgAssets";
 
 interface NavbarProps {
   lang: "ar" | "en";
   setLang: (lang: "ar" | "en") => void;
+  theme: "light" | "dark";
+  setTheme: (theme: "light" | "dark") => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
+export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, theme, setTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -49,13 +51,14 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
         className="glass-nav-bar"
         style={{
           boxShadow: scrolled
-            ? "0 14px 40px -10px rgba(0, 0, 0, 0.95), 0 0 25px rgba(152, 21, 89, 0.45)"
-            : "0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(80, 11, 117, 0.25)",
+            ? (theme === "light" ? "0 10px 30px -10px rgba(80, 11, 117, 0.2), 0 0 15px rgba(152, 21, 89, 0.12)" : "0 14px 40px -10px rgba(0, 0, 0, 0.95), 0 0 25px rgba(152, 21, 89, 0.45)")
+            : (theme === "light" ? "0 8px 24px -10px rgba(80, 11, 117, 0.12), 0 0 12px rgba(152, 21, 89, 0.08)" : "0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(80, 11, 117, 0.25)"),
         }}
       >
-        {/* Left Badge: Official ADA Logo Symbol */}
+        {/* Left Badge: Official ADA Logo Symbol + Bold "ADa" Wordmark */}
         <a href="#hero" className="nav-badge-box" aria-label="Ada Robot Home" title="ADA Robot">
-          <AdaLogo variant="neon" width={56} height={26} />
+          <AdaLogo variant={theme === "light" ? "gradient" : "neon"} width={42} height={20} />
+          <span className="nav-brand-ada-text">ADa</span>
         </a>
 
         {/* Center Desktop Navigation Links */}
@@ -66,7 +69,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
             </a>
           ))}
 
-          {/* Link to Inventor Duaa Section */}
+          {/* Link to Developer Duaa Section */}
           <a
             href="#inventor-portal"
             className="nav-item-link"
@@ -78,8 +81,27 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
           </a>
         </div>
 
-        {/* Right Utilities: Language Switcher + Mobile Hamburger Button */}
+        {/* Right Utilities: Theme Toggle + Language Switcher + Mobile Hamburger Button */}
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          {/* Light / Dark Mode Toggle */}
+          <button
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            className="btn-ada-glass theme-toggle-btn"
+            style={{
+              padding: "5px 11px",
+              fontSize: "0.8rem",
+              borderRadius: "var(--radius-full)",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+            }}
+            aria-label="Toggle Theme"
+            title={theme === "light" ? (isAr ? "التبديل إلى الوضع الداكن" : "Switch to Dark Mode") : (isAr ? "التبديل إلى الوضع الفاتح" : "Switch to Light Mode")}
+          >
+            {theme === "light" ? <Moon size={14} color="#500B75" /> : <Sun size={14} color="#F59E0B" />}
+            <span style={{ fontWeight: "600" }}>{theme === "light" ? (isAr ? "داكن" : "Dark") : (isAr ? "فاتح" : "Light")}</span>
+          </button>
+
           <button
             onClick={() => setLang(isAr ? "en" : "ar")}
             className="btn-ada-glass"
@@ -90,8 +112,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
               display: "inline-flex",
               alignItems: "center",
               gap: "5px",
-              background: "rgba(45, 12, 66, 0.6)",
-              borderColor: "rgba(168, 85, 247, 0.4)",
             }}
             aria-label="Switch Language"
           >
@@ -106,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang }) => {
             aria-label={mobileMenuOpen ? "Close Navigation Menu" : "Open Navigation Menu"}
             aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <X size={20} color="#FFFFFF" /> : <Menu size={20} color="#FFFFFF" />}
+            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </nav>
