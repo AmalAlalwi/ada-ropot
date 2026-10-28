@@ -435,7 +435,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                       {isAr ? "المركز الأول بالمشاريع الريادية — مسابقة Tech Harvest" : "1st Place Winner — Tech Harvest Competition"}
                     </h4>
                     <span style={{ fontSize: "0.82rem", color: "var(--accent-magenta)", fontFamily: "monospace" }}>
-                      2025
+                      {isAr ? "أكتوبر 2026" : "October 2026"}
                     </span>
                   </div>
                   <div style={{ fontSize: "0.88rem", color: "var(--accent-magenta)", fontWeight: "600", marginTop: "4px" }}>
@@ -463,7 +463,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                       {isAr ? "الميدالية الفضية - مؤسسة التكنوقراط السوريون" : "Silver Medal Winner — Syrian Technocrats Foundation"}
                     </h4>
                     <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
-                      2026
+                      {isAr ? "حزيران 2026" : "June 2026"}
                     </span>
                   </div>
                   <div style={{ fontSize: "0.88rem", color: "var(--accent-cyan)", fontWeight: "600", marginTop: "4px" }}>
@@ -476,7 +476,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   </p>
                 </div>
 
-                {/* Role 3: Industry Orientation */}
+                {/* Role 4: HEMK Exhibition — Academic Nomination */}
                 <div
                   style={{
                     background: "rgba(14, 4, 27, 0.8)",
@@ -487,20 +487,24 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   }}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
-                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "اطلاع وتدريب عملي ميداني" : "Industrial Field Practical Orientation"}
+                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text-pure)" }}>
+                      {isAr
+                        ? "ترشيح أكاديمي للمشاريع المميزة — جامعة حلب"
+                        : "Academic Nomination for Distinguished Projects — University of Aleppo"}
                     </h4>
-                    <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
-                      2024
+                    <span style={{ fontSize: "0.82rem", color: "#10B981", fontFamily: "monospace" }}>
+                      {isAr ? "نوفمبر 2025" : "November 2025"}
                     </span>
                   </div>
                   <div style={{ fontSize: "0.88rem", color: "#10B981", fontWeight: "600", marginTop: "4px" }}>
-                    Aleppo Chamber of Industry & University of Aleppo
+                    {isAr
+                      ? "معرض كلية الهندسة الميكانيكية والكهربائية (HEMK) — دمشق"
+                      : "Faculty of Mech. & Electrical Engineering Exhibition (HEMK) — Damascus"}
                   </div>
                   <p style={{ marginTop: "10px", fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
                     {isAr
-                      ? "اطلاع وتدريب عملي ميداني للتعرف على المعامل والآلات الصناعية وخطوط الإنتاج ومتحكماتها بالتعاون بين غرفة صناعة حلب وجامعتها."
-                      : "Field practical orientation visiting industrial manufacturing plants, production equipment, and automation lines."}
+                      ? "ترشيح رسمي لمشروع آدا ضمن المشاريع المميزة على مستوى جامعة حلب، مع مشاركة فعلية لمدة 3 أيام متتالية في معرض كلية الهندسة الميكانيكية والكهربائية في دمشق. تميّز 11 مشروعاً من جامعة حلب خلال هذا المعرض."
+                      : "Official nomination of the ADA project among the distinguished projects of the University of Aleppo, with 3 consecutive days of active participation at the HEMK Faculty Exhibition in Damascus. 11 projects from the University of Aleppo were recognized at this exhibition."}
                   </p>
                 </div>
 
@@ -591,20 +595,20 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   {
                     title: "1st Place Winner — Tech Harvest Competition",
                     org: "Sanad Youth Development Organization (سند الشباب التنموي - حلب)",
-                    date: "2025",
+                    date: "October 2026 • أكتوبر 2026",
                     badge: "1st Place Entrepreneurship",
                   },
                   {
                     title: "Silver Medal Winner — Top 5 in Syria",
                     org: "Syrian Technocrats Foundation (مؤسسة التكنوقراط السوريون)",
-                    date: "2026",
+                    date: "June 2026 • حزيران 2026",
                     badge: "Top 5 Syria Engineering Projects",
                   },
                   {
-                    title: "Exhibition Award Winner (HEMK 2025)",
-                    org: "Damascus Faculty of Mechanical & Electrical Engineering",
-                    date: "2025",
-                    badge: "Aleppo University Best Projects",
+                    title: "Academic Nomination — Distinguished Projects of the University of Aleppo",
+                    org: "Faculty of Mech. & Electrical Engineering (HEMK) — Damascus",
+                    date: "November 2025 • نوفمبر 2025",
+                    badge: "11 Projects — 3-Day Exhibition",
                   },
                   {
                     title: "Business Analytics Level 1 (Excel)",
