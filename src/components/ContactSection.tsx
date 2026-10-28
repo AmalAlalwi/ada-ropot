@@ -43,12 +43,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
             {isAr ? "قنوات التواصل والشراكة" : "Connect & Collaborate"}
           </span>
           <h2 className="section-title">
-            {isAr ? "تواصل مع مطورة روبوت أدا" : "Initiate Direct Collaboration"}
+            {isAr ? "تواصل معنا حول مشروع آدا" : "Connect with the ADA Project"}
           </h2>
           <p className="section-desc" style={{ margin: "0 auto" }}>
             {isAr
-              ? "مستعدون لبناء شراكات بحثية وأكاديمية وصناعية في مجال الروبوتات الحيوية والذكاء الاصطناعي التفاعلي."
-              : "Open for academic partnerships, robotic lab research fellowships, AI grants, and technological deployment."}
+              ? "مستعدون لبناء شراكات بحثية وتعليمية وتقنية لتطوير آدا ليصبح رفيقاً حقيقياً للأطفال الذين يحتاجون إلى المزيد من الاهتمام والتواصل."
+              : "Open to research, educational, and technical partnerships to further develop ADA as a genuine companion for children who need more attention and communication."}
           </p>
         </div>
 

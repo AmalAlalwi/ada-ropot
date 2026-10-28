@@ -35,9 +35,9 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, theme, setTheme }
   const isAr = lang === "ar";
 
   const navLinks = [
-    { href: "#neural", label: "Neural", labelAr: "الشبكة العصبية" },
-    { href: "#matrix", label: "Matrix", labelAr: "المصفوفة" },
-    { href: "#evolution", label: "Evolution", labelAr: "التطور" },
+    { href: "#how-ada-works", label: "How ADA Works", labelAr: "كيف يعمل آدا" },
+    { href: "#matrix", label: "For Whom", labelAr: "لمن المشروع" },
+    { href: "#evolution", label: "What Sets Us Apart", labelAr: "ما يميزنا" },
     { href: "#connect", label: "Connect", labelAr: "التواصل" },
   ];
 

@@ -30,34 +30,32 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* ========================================================
             HERO CONTENT COLUMN
-            - English (LTR): On the right, right-aligned, matching screenshot exactly.
-            - Arabic (RTL): On the left, left-aligned in RTL flow.
             ======================================================== */}
         <div className={`hero-content-anchor ${isAr ? "content-left" : "content-right"}`}>
           
-          {/* Mission Statement Paragraph (Word-for-word from screenshot) */}
+          {/* Mission Statement Paragraph */}
           <p className="hero-paragraph-statement">
             {isAr
-              ? "ملف احترافي يعرض مفاهيم متقدمة في الذكاء الاصطناعي، والروبوتات، والأتمتة الذكية. يركز على بناء أنظمة ذكية، وحلول قائمة على البيانات، وتقنيات جاهزة للمستقبل صُممت لحل مشكلات العالم الحقيقي بدقة وابتكار."
-              : "A professional portfolio presenting advanced concepts in artificial intelligence, robotics, and smart automation. Focused on building intelligent systems, data-driven solutions, and future-ready technologies designed to solve real-world problems with precision and innovation."}
+              ? "رفيق روبوتي قيد التطوير، نعمل ليكون داعماً للأطفال في التعلم والتواصل والتفاعل بثقة ومتعة. مصمَّم بالكاميرا الذكية والذكاء الاصطناعي ليرى تعبيرات الوجه ويستجيب بحركات وتعبيرات مشجعة."
+              : "A robotic companion in development — built to support children in learning, communication, and social interaction with confidence and joy. Powered by smart vision and AI to see facial expressions and respond with encouraging movements."}
           </p>
 
-          {/* Prominent Main Heading (From screenshot) */}
+          {/* Prominent Main Heading */}
           <div className="hero-title-group">
             <h1 className="hero-main-title">
-              {isAr ? "أدا روبوت" : "Ada Robot"}
+              {isAr ? "آدا" : "ADA"}
             </h1>
 
-            {/* Futuristic Subtitle & System Tagline */}
+            {/* Futuristic Subtitle & Tagline */}
             <div className="hero-tech-tagline">
               <span className="badge-neural">
                 <span className="badge-neural-dot" />
-                {isAr ? "صُمم ليفهم • DESIGNED TO UNDERSTAND" : "DESIGNED TO UNDERSTAND • INMOOV V2"}
+                {isAr ? "إننا نهمس بالأمل • WE WHISPER HOPE" : "WE WHISPER HOPE • CHILDREN'S ROBOTIC COMPANION"}
               </span>
             </div>
           </div>
 
-          {/* Quick Actions (Minimalist and subtle so it preserves screenshot elegance) */}
+          {/* Quick Actions */}
           <div className="hero-quick-actions">
             {onExploreInventor && (
               <button
@@ -78,11 +76,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             )}
 
             <a
-              href="#neural"
+              href="#how-ada-works"
               className="hero-scroll-pill"
-              aria-label="Scroll to Neural Architecture"
+              aria-label="Scroll to How ADA Works"
             >
-              <span>{isAr ? "استكشف النظام" : "Explore Matrix"}</span>
+              <span>{isAr ? "كيف يعمل آدا؟" : "How ADA Works"}</span>
               <ArrowDown size={14} className="animate-bounce-subtle" />
             </a>
           </div>

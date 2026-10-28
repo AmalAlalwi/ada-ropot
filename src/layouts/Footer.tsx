@@ -30,11 +30,11 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
             <AdaLogo variant="gradient" width={160} height={70} />
             <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
               {isAr
-                ? "روبوت أدا (ADA Robot) - منصة الروبوتات الحيوية والذكاء الاصطناعي التفاعلي متعدد الوسائط بمحاكاة 17 مشغل سيرفو (Actuators) لعضلات الوجه البشري."
-                : "ADA Robot — Biomechatronic 17-actuator facial robotic system with real-time multimodal AI emotion recognition."}
+                ? "آدا — رفيق روبوتي تفاعلي قيد التطوير، مصمَّم ليدعم الأطفال في التعلم والتواصل والتفاعل بثقة ومتعة، مع تركيز خاص على ذوي متلازمة داون وطيف التوحد."
+                : "ADA — An interactive robotic companion in development, designed to support children in learning, communication, and social interaction, with a special focus on Down syndrome and autism spectrum disorder."}
             </p>
             <div style={{ fontSize: "0.82rem", color: "var(--accent-magenta)", fontStyle: "italic" }}>
-              {isAr ? "« إننا نهمس بالأمل »" : "« Designed to understand »"}
+              {isAr ? "« إننا نهمس بالأمل »" : "« We Whisper Hope »"}
             </div>
           </div>
 
@@ -45,8 +45,9 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
             </h4>
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "0.88rem" }}>
               <a href="#hero" className="nav-item-link">{isAr ? "الرئيسية" : "Home"}</a>
-              <a href="#neural" className="nav-item-link">{isAr ? "المعمارية العصبية" : "Neural Pipeline"}</a>
-              <a href="#matrix" className="nav-item-link">{isAr ? "المصفوفة والجوائز" : "Matrix & Evolution"}</a>
+              <a href="#how-ada-works" className="nav-item-link">{isAr ? "كيف يعمل آدا" : "How ADA Works"}</a>
+              <a href="#matrix" className="nav-item-link">{isAr ? "لمن المشروع" : "For Whom"}</a>
+              <a href="#evolution" className="nav-item-link">{isAr ? "ما الذي يميزنا" : "What Sets Us Apart"}</a>
               <a href="#inventor-portal" className="nav-item-link" style={{ color: "var(--accent-cyan)", fontWeight: "600" }}>
                 {isAr ? "المهندسة دعاء" : "Eng. Duaa"}
               </a>
@@ -108,11 +109,11 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
             <span>ADA Robot</span>
             <span>•</span>
+            <span>آدا — رفيق روبوتي للأطفال</span>
+            <span>•</span>
             <span>المهندسة دعاء الابراهيم</span>
             <span>•</span>
-            <span>University of Aleppo</span>
-            <span>•</span>
-            <span>InMoov V2 Biomechatronics</span>
+            <span>إننا نهمس بالأمل</span>
           </div>
         </div>
 

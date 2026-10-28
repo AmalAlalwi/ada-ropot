@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import { Cpu, Eye, Mic, Brain, Sparkles, Layers, ShieldCheck, Zap } from "lucide-react";
-import { NeuralPipelineDiagramSvg } from "./AdaSvgAssets";
+import { Eye, Mic, Heart, Users, Sparkles, MessageCircle } from "lucide-react";
 
 interface NeuralArchitectureProps {
   lang: "ar" | "en";
@@ -11,92 +10,68 @@ interface NeuralArchitectureProps {
 export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ lang }) => {
   const isAr = lang === "ar";
 
-  const pipelineCards = [
+  const howCards = [
     {
       icon: <Eye size={24} color="#00F2FE" />,
-      titleEn: "Real-Time FaceMesh Vision",
-      titleAr: "الرؤية الحاسوبية وتتبع الملامح (MediaPipe)",
-      tech: "MediaPipe 468 Landmark Mesh",
+      titleEn: "ADA Sees & Responds",
+      titleAr: "يتفاعل — يرى ويستجيب",
       descEn:
-        "High-frequency ocular and facial tracking processing 468 3D landmarks in real time. Accurately extracts micro-expressions, head pose, and facial muscle vectors in real time.",
+        "ADA's smart camera detects the child's facial expressions and emotional cues in real time. It responds with encouraging robotic movements, expressive face motions, and supportive voice feedback — creating a warm, engaging interaction.",
       descAr:
-        "نظام رؤية حاسوبية عالي التردد يرصد 468 نقطة ثلاثية الأبعاد على الوجه في الزمن الحقيقي Real time، ويستخرج التعبيرات الدقيقة وزوايا إمالة الرأس في الزمن الحقيقي Real time.",
+        "تكشف كاميرا آدا الذكية تعبيرات وجه الطفل ومشاعره في الزمن الحقيقي، ثم يستجيب بحركات روبوتية مشجعة وتعبيرات وجه دافئة وصوت داعم — مما يخلق تفاعلاً ممتعاً ومحفّزاً.",
     },
     {
-      icon: <Brain size={24} color="#FF2E93" />,
-      titleEn: "CNN + XGBoost Emotion Classifier",
-      titleAr: "مصنف المشاعر الهجين (CNN + XGBoost)",
-      tech: "FER-2013 + Hybrid Age/Gender Detection",
+      icon: <Sparkles size={24} color="#FF2E93" />,
+      titleEn: "ADA Teaches",
+      titleAr: "يعلّم — أنشطة بسيطة وممتعة",
       descEn:
-        "Deep convolutional neural architecture paired with gradient-boosted decision trees. Achieves robust multiclass emotion classification across seven affective states with sub-45ms latency.",
+        "ADA presents simple, structured activities for communication and learning — through sound, movement, and expressions. Future capabilities include speech practice exercises, language learning activities, and educational games.",
       descAr:
-        "بنية شبكة عصبية التفافية هجينة مع خوارزمية XGBoost مدربة على قاعدة بيانات FER-2013 لتمييز سبع حالات شعورية ونطاقات عمرية بدقة تصنيف متقدمة وبزمن تأخير يقل عن 45 ميلي ثانية.",
+        "يقدم آدا أنشطة مبسطة ومشجعة للتواصل والتعلم والانتباه، من خلال الصوت والحركة والتعبيرات. تشمل الإمكانيات المستقبلية تمارين النطق وأنشطة تعلم اللغات والألعاب التعليمية.",
     },
     {
-      icon: <Mic size={24} color="#981559" />,
-      titleEn: "Acoustic Speech & Conversational NLP",
-      titleAr: "المعالجة الصوتية والمحادثة الذكية",
-      tech: "Whisper ASR + GPT-2 + gTTS",
+      icon: <MessageCircle size={24} color="#10B981" />,
+      titleEn: "ADA Strengthens Communication",
+      titleAr: "يعزّز التواصل — الأسرة والمختص",
       descEn:
-        "Full-duplex voice pipeline combining OpenAI Whisper for noise-resilient automatic speech recognition, GPT-2 conversational reasoning, gTTS voice synthesis, and a Telegram bot (prototype for testing only).",
+        "ADA bridges the child with their family and therapist. It supports ongoing practice between sessions, helping parents and specialists track interaction progress in a safe, structured, and encouraging environment.",
       descAr:
-        "معالجة صوتية متكاملة تدمج نموذج Whisper للتعرف الآلي على الكلام المعزول عن الضوضاء، ومحرك GPT-2 للمحادثة التفاعلية، والتوليف الصوتي عبر gTTS، مع بوت تلجرام (نموذج أولي للاختبار فقط).",
+        "يجسر آدا العلاقة بين الطفل وأسرته وأخصائيه. يدعم التمرين المستمر بين الجلسات، مما يساعد الأهل والمختصين على متابعة التفاعل في بيئة آمنة ومنظمة ومشجعة.",
     },
     {
-      icon: <Cpu size={24} color="#10B981" />,
-      titleEn: "Hardware Actuation & Actuator Matrix",
-      titleAr: "التحكم العتادي ومصفوفة المشغلات (Actuators)",
-      tech: "InMoov V2 Assembly + Arduino C++ & MediaPipe",
+      icon: <Heart size={24} color="#981559" />,
+      titleEn: "A Companion, Not a Replacement",
+      titleAr: "رفيق لا بديل",
       descEn:
-        "17 high-torque precision actuators (JX PDI-11098 9g & JX PDI-6221MG 20kg servos) programmed in Arduino C++ and integrated with the final MediaPipe model, engineered according to Paul Ekman's FACS and Action Units to replicate anatomical muscle contractions.",
+        "ADA is not a replacement for parents or specialists — it is a robotic friend that helps the child practice, learn, and play alongside them in a safe and structured environment, complementing professional care.",
       descAr:
-        "17 مشغل سيرفو دقيق عالي العزم (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg مبرمج بلغة Arduino C++ ومربوط بالنموذج النهائي MediaPipe، مربوطة هندسياً وفق نظام FACS لعالم النفس بول إيكمان لتقليد تعابير الوجه بالاعتماد على نظام Action Units (ملاحقة التقلصات العضلية في البنية التشريحية للوجه للتعرف على المشاعر).",
+        "آدا ليس بديلاً عن الأهل أو المختص، بل صديق روبوتي يساعد الطفل على التمرين والتعلم واللعب ضمن بيئة منظمة وآمنة، ويعمل جنباً إلى جنب مع الرعاية المتخصصة.",
     },
   ];
 
   return (
-    <section id="neural" className="section-padding" style={{ position: "relative" }}>
+    <section id="how-ada-works" className="section-padding" style={{ position: "relative" }}>
       <div className="container-ada">
         {/* Section Header */}
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
           <span className="section-tag-badge">
-            <Cpu size={14} />
-            {isAr ? "البنية العصبية والهندسية" : "Neural & Mechatronic Pipeline"}
+            <Eye size={14} />
+            {isAr ? "آلية عمل آدا" : "How ADA Works"}
           </span>
           <h2 className="section-title">
-            {isAr ? "معمارية الذكاء الاصطناعي متعدد الوسائط" : "Multimodal AI Architecture"}
+            {isAr ? "كيف يعمل آدا؟" : "The ADA Experience"}
           </h2>
           <p className="section-desc" style={{ margin: "0 auto" }}>
             {isAr
-              ? "كيف يتحول التحفيز البصري والصوتي إلى تفاعل إنساني؟ سلسلة مترابطة تبدأ من الكاميرا والميكروفون وتمر بالشبكات العصبية لتصل إلى حركة العضلات الميكاترونيكية."
-              : "Bridging human emotional cues to physical actuation. An integrated end-to-end pipeline connecting sensory inputs to deep neural models and robotic servos."}
+              ? "رحلة تفاعلية تبدأ من رؤية الطفل، تمر بالذكاء الاصطناعي لفهم مشاعره، وتصل إلى استجابة روبوتية دافئة ومشجعة تعزز تعلمه وتواصله."
+              : "An interactive journey that starts with seeing the child, passes through AI to understand their feelings, and arrives at a warm, encouraging robotic response that strengthens their learning and communication."}
           </p>
         </div>
 
-        {/* Pipeline SVG Architecture Diagram */}
-        <div className="glass-panel neural-bus-panel">
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
-            <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
-              // SYSTEM_DATAFLOW_BUS_PIPELINE
-            </span>
-            <span className="badge-neural" style={{ fontSize: "0.74rem" }}>
-              ZERO-LATENCY SYNC
-            </span>
-          </div>
-          <div style={{ width: "100%", overflowX: "auto" }}>
-            <div style={{ minWidth: "700px" }}>
-              <NeuralPipelineDiagramSvg />
-            </div>
-          </div>
-        </div>
-
-        {/* 4 Pipeline Core Pillars Grid */}
+        {/* How ADA Works Cards */}
         <div className="grid-2">
-          {pipelineCards.map((card, idx) => (
-            <div
-              key={idx}
-              className="glass-panel neural-card"
-            >
+          {howCards.map((card, idx) => (
+            <div key={idx} className="glass-panel neural-card">
               <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
                 <div
                   style={{
@@ -108,6 +83,7 @@ export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ l
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
+                    flexShrink: 0,
                   }}
                 >
                   {card.icon}
@@ -116,17 +92,43 @@ export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ l
                   <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text-pure)" }}>
                     {isAr ? card.titleAr : card.titleEn}
                   </h3>
-                  <div style={{ fontSize: "0.78rem", color: "var(--accent-cyan)", fontFamily: "monospace", marginTop: "2px" }}>
-                    {card.tech}
-                  </div>
                 </div>
               </div>
 
-              <p style={{ fontSize: "0.95rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
+              <p style={{ fontSize: "0.95rem", color: "var(--text-lavender)", lineHeight: "1.75" }}>
                 {isAr ? card.descAr : card.descEn}
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Need Statement Banner */}
+        <div
+          className="glass-panel evolution-card"
+          style={{ marginTop: "40px", textAlign: isAr ? "right" : "left" }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
+            <Users size={26} color="#FF2E93" />
+            <h3 style={{ fontSize: "1.4rem", fontWeight: "800", color: "var(--text-pure)" }}>
+              {isAr ? "احتياج لا تكفيه الأدوات المتاحة اليوم" : "A Need Today's Tools Don't Fully Meet"}
+            </h3>
+          </div>
+          <div className="grid-2" style={{ gap: "24px" }}>
+            <div>
+              <p style={{ fontSize: "0.95rem", color: "var(--text-lavender)", lineHeight: "1.75" }}>
+                {isAr
+                  ? "يواجه بعض الأطفال صعوبات في التواصل والنطق والتفاعل الاجتماعي والتركيز أو تعلم مهارات ولغات جديدة. يواجه الأهل والمراكز تحدياً في إيجاد أدوات داعمة تناسب احتياجات كل طفل."
+                  : "Some children face challenges in communication, speech, social interaction, focus, or learning new skills and languages. Parents and centers struggle to find supportive tools tailored to each child's unique needs."}
+              </p>
+            </div>
+            <div>
+              <p style={{ fontSize: "0.95rem", color: "var(--text-lavender)", lineHeight: "1.75" }}>
+                {isAr
+                  ? "مع آدا: روبوت تفاعلي يقدّم أنشطة مبسطة ومشجعة للتواصل والتعلم والانتباه — أداة مساندة قابلة للتطوير في المنزل أو المركز، بالتعاون مع الأهل والأخصائيين."
+                  : "With ADA: an interactive robot offering simplified, encouraging activities for communication, learning, and attention — a scalable supportive tool for home or center use, in collaboration with parents and specialists."}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

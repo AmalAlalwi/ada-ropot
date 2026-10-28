@@ -62,10 +62,10 @@ export default function Home() {
           }}
         />
 
-        {/* 2. Neural Architecture & AI Pipeline (MediaPipe, FER-2013, Whisper, GPT-2) */}
+        {/* 2. How ADA Works — Interaction, Teaching, Communication */}
         <NeuralArchitectureSection lang={lang} />
 
-        {/* 3. Matrix Technical Benchmarks & Evolution Awards (Damascus HEMK 2025) */}
+        {/* 3. For Whom + What Sets Us Apart + Future Horizons */}
         <MatrixSpecsSection lang={lang} />
 
         {/* 4. The Dedicated Sub-Portal for Eng. Duaa Alibrahim */}
