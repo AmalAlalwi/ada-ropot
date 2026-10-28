@@ -1483,9 +1483,13 @@ body {
 }
 
 [data-theme="light"] .neural-card h3,
+[data-theme="light"] .matrix-spec-val,
+[data-theme="light"] .matrix-spec-card .matrix-spec-val,
 [data-theme="light"] .matrix-spec-card div[style*="font-weight: 800"],
 [data-theme="light"] .evolution-card h3,
+[data-theme="light"] .evolution-card-title,
 [data-theme="light"] .evolution-item h4,
+[data-theme="light"] .evolution-item-title,
 [data-theme="light"] .contact-panel h3 {
   color: #1C0B29 !important;
 }

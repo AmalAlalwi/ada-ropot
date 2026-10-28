@@ -113,7 +113,7 @@ export const NeuralArchitectureSection: React.FC<NeuralArchitectureProps> = ({ l
                   {card.icon}
                 </div>
                 <div>
-                  <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
+                  <h3 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text-pure)" }}>
                     {isAr ? card.titleAr : card.titleEn}
                   </h3>
                   <div style={{ fontSize: "0.78rem", color: "var(--accent-cyan)", fontFamily: "monospace", marginTop: "2px" }}>

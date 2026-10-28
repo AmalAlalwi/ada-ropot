@@ -21,18 +21,25 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
 
   const awards = [
     {
+      year: "2026",
+      titleEn: "Silver Medal — Syrian Technocrats Foundation",
+      titleAr: "الميدالية الفضية - مؤسسة التكنوقراط السوريون",
+      descEn: "Awarded Silver Medal and ranked among the Top 5 pioneering electrical and mechanical engineering entrepreneurial projects across Syria.",
+      descAr: "حاصلة على الميدالية الفضية من مؤسسة التكنوقراط السوريون ضمن ترتيب الـ Top 5 بمشاريع الهندسة الكهربائية والميكانيكية الريادية على مستوى سوريا.",
+    },
+    {
+      year: "2025",
+      titleEn: "1st Place in Entrepreneurial Projects — Tech Harvest (Sanad Youth)",
+      titleAr: "المركز الأول بالمشاريع الريادية — مسابقة Tech Harvest (سند الشباب - حلب)",
+      descEn: "Won 1st Place in entrepreneurial engineering projects at the Tech Harvest competition organized by Sanad Youth Development, Aleppo.",
+      descAr: "حائزة على المركز الأول في فئة المشاريع الريادية بمسابقة Tech Harvest بالتعاون مع فريق سند الشباب التنموي في حلب.",
+    },
+    {
       year: "2025",
       titleEn: "Faculty Exhibition Award — Damascus HEMK",
       titleAr: "جائزة معرض كلية الهندسة الميكانيكية والكهربائية (HEMK) - دمشق",
       descEn: "Recognized as 'One of Aleppo University's Best Engineering Projects' for groundbreaking integration of biomechatronics and emotional AI.",
       descAr: "تم تكريم المشروع كأحد أفضل مشاريع جامعة حلب الهندسية للدمج المتطور بين الميكاترونيكس الحيوية والذكاء الاصطناعي التفاعلي.",
-    },
-    {
-      year: "2024",
-      titleEn: "Silver Medal — Syrian Technocrats Foundation",
-      titleAr: "الميدالية الفضية - مؤسسة التكنوقراط السوريون",
-      descEn: "Awarded Silver Medal and ranked among the Top 5 pioneering electrical and mechanical engineering entrepreneurial projects across Syria.",
-      descAr: "حاصلة على الميدالية الفضية من مؤسسة التكنوقراط السوريون ضمن ترتيب الـ Top 5 بمشاريع الهندسة الكهربائية والميكانيكية الريادية على مستوى سوريا.",
     },
   ];
 
@@ -65,7 +72,7 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
               <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", fontWeight: "500" }}>
                 {isAr ? item.labelAr : item.labelEn}
               </div>
-              <div style={{ fontSize: "2rem", fontWeight: "800", color: "#FFFFFF" }}>
+              <div className="matrix-spec-val" style={{ fontSize: "2rem", fontWeight: "800", color: "var(--text-pure)" }}>
                 {item.val}
               </div>
               <div style={{ fontSize: "0.8rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
@@ -79,12 +86,12 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
         <div id="evolution" className="glass-panel evolution-card">
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "28px" }}>
             <Award size={28} color="#FF2E93" />
-            <h3 style={{ fontSize: "1.6rem", fontWeight: "800", color: "#FFFFFF" }}>
+            <h3 className="evolution-card-title" style={{ fontSize: "1.6rem", fontWeight: "800", color: "var(--text-pure)" }}>
               {isAr ? "التطور والاعتراف الأكاديمي والجوائز" : "Evolution, Awards & Academic Recognition"}
             </h3>
           </div>
 
-          <div className="grid-2">
+          <div className="grid-3">
             {awards.map((aw, idx) => (
               <div
                 key={idx}
@@ -106,10 +113,10 @@ export const MatrixSpecsSection: React.FC<MatrixSpecsSectionProps> = ({ lang }) 
                   </span>
                   <Shield size={18} color="var(--accent-magenta)" />
                 </div>
-                <h4 style={{ fontSize: "1.15rem", fontWeight: "700", color: "#FFFFFF" }}>
+                <h4 className="evolution-item-title" style={{ fontSize: "1.08rem", fontWeight: "700", color: "var(--text-pure)", lineHeight: "1.45" }}>
                   {isAr ? aw.titleAr : aw.titleEn}
                 </h4>
-                <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
+                <p style={{ fontSize: "0.88rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
                   {isAr ? aw.descAr : aw.descEn}
                 </p>
               </div>

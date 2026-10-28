@@ -65,7 +65,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
             }}
           >
             <div>
-              <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "8px" }}>
+              <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "var(--text-pure)", marginBottom: "8px" }}>
                 {isAr ? "معلومات التواصل المباشرة" : "Verified Contact Details"}
               </h3>
               <p style={{ fontSize: "0.92rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
@@ -86,7 +86,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                     </div>
                     <a
                       href="mailto:duaaalibrahim6@gmail.com"
-                      style={{ fontSize: "0.92rem", color: "#FFFFFF", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
+                      style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
                     >
                       duaaalibrahim6@gmail.com
                     </a>
@@ -119,7 +119,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                       href="https://linkedin.com/in/duaa-alibrahim"
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontSize: "0.92rem", color: "#FFFFFF", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
+                      style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
                     >
                       linkedin.com/in/duaa-alibrahim
                     </a>
@@ -135,7 +135,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                     <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", textTransform: "uppercase" }}>
                       {isAr ? "الهاتف / واتساب • الموقع" : "Mobile / WhatsApp • Location"}
                     </div>
-                    <div style={{ fontSize: "0.92rem", color: "#FFFFFF", fontWeight: "600", wordBreak: "break-word" }}>
+                    <div style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-word" }}>
                       +963-998-962774 • Aleppo, Syria
                     </div>
                   </div>
@@ -163,7 +163,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
 
           {/* Right Column: Interactive Message Form */}
           <div className="glass-panel contact-panel">
-            <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "#FFFFFF", marginBottom: "8px" }}>
+            <h3 style={{ fontSize: "1.4rem", fontWeight: "700", color: "var(--text-pure)", marginBottom: "8px" }}>
               {isAr ? "إرسال رسالة مباشرة" : "Send A Direct Inquiry"}
             </h3>
             <p style={{ fontSize: "0.92rem", color: "var(--text-muted)", marginBottom: "24px" }}>
@@ -175,7 +175,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
             {submitted ? (
               <div className="contact-success-box">
                 <CheckCircle2 size={48} color="#10B981" style={{ margin: "0 auto 12px" }} />
-                <h4 style={{ fontSize: "1.3rem", fontWeight: "700", color: "#FFFFFF" }}>
+                <h4 style={{ fontSize: "1.3rem", fontWeight: "700", color: "var(--text-pure)" }}>
                   {isAr ? "تم إرسال رسالتك بنجاح!" : "Message Dispatched Successfully!"}
                 </h4>
                 <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", marginTop: "8px" }}>

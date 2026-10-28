@@ -420,7 +420,35 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   </ul>
                 </div>
 
-                {/* Role 2: Syrian Technocrats Foundation */}
+                {/* Role 2: Tech Harvest Competition (Sanad Youth) */}
+                <div
+                  style={{
+                    background: "rgba(14, 4, 27, 0.8)",
+                    borderLeft: "4px solid var(--accent-magenta)",
+                    borderRight: isAr ? "4px solid var(--accent-magenta)" : "none",
+                    borderRadius: "var(--radius-md)",
+                    padding: "24px",
+                  }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
+                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text-pure)" }}>
+                      {isAr ? "المركز الأول بالمشاريع الريادية — مسابقة Tech Harvest" : "1st Place Winner — Tech Harvest Competition"}
+                    </h4>
+                    <span style={{ fontSize: "0.82rem", color: "var(--accent-magenta)", fontFamily: "monospace" }}>
+                      2025
+                    </span>
+                  </div>
+                  <div style={{ fontSize: "0.88rem", color: "var(--accent-magenta)", fontWeight: "600", marginTop: "4px" }}>
+                    {isAr ? "فريق سند الشباب التنموي — حلب" : "Sanad Youth Development Organization — Aleppo"}
+                  </div>
+                  <p style={{ marginTop: "10px", fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.6" }}>
+                    {isAr
+                      ? "حائزة على المركز الأول في فئة المشاريع الريادية بمسابقة Tech Harvest بحلب لتطوير وتصميم روبوت أدا البيوميكاترونيكي للذكاء الاصطناعي التفاعلي."
+                      : "Won 1st Place in the entrepreneurial track at Tech Harvest competition in Aleppo for advancing human-centered interactive robotics."}
+                  </p>
+                </div>
+
+                {/* Role 3: Syrian Technocrats Foundation */}
                 <div
                   style={{
                     background: "rgba(14, 4, 27, 0.8)",
@@ -431,11 +459,11 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                   }}
                 >
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "8px" }}>
-                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "#FFFFFF" }}>
+                    <h4 style={{ fontSize: "1.2rem", fontWeight: "700", color: "var(--text-pure)" }}>
                       {isAr ? "الميدالية الفضية - مؤسسة التكنوقراط السوريون" : "Silver Medal Winner — Syrian Technocrats Foundation"}
                     </h4>
                     <span style={{ fontSize: "0.82rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
-                      2024 - 2025
+                      2026
                     </span>
                   </div>
                   <div style={{ fontSize: "0.88rem", color: "var(--accent-cyan)", fontWeight: "600", marginTop: "4px" }}>
@@ -561,9 +589,15 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                     badge: "Graduating Oct 2026",
                   },
                   {
+                    title: "1st Place Winner — Tech Harvest Competition",
+                    org: "Sanad Youth Development Organization (سند الشباب التنموي - حلب)",
+                    date: "2025",
+                    badge: "1st Place Entrepreneurship",
+                  },
+                  {
                     title: "Silver Medal Winner — Top 5 in Syria",
                     org: "Syrian Technocrats Foundation (مؤسسة التكنوقراط السوريون)",
-                    date: "2024 - 2025",
+                    date: "2026",
                     badge: "Top 5 Syria Engineering Projects",
                   },
                   {
