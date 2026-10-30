@@ -528,20 +528,13 @@ body {
   z-index: 30;
   font-family: var(--font-ar);
   cursor: pointer;
-  padding: 10px 22px;
-  border-radius: var(--radius-lg);
-  background: rgba(14, 4, 27, 0.75);
-  border: 1px solid rgba(152, 21, 89, 0.4);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(152, 21, 89, 0.25);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .hero-face-arabic-box:hover {
-  border-color: var(--accent-magenta);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 46, 147, 0.5);
   transform: translateY(-2px);
 }
 
@@ -1604,36 +1597,29 @@ body {
 }
 
 [data-theme="light"] .hero-face-arabic-box {
-  background: rgba(255, 255, 255, 0.94) !important;
-  border: 1.5px solid rgba(152, 21, 89, 0.35) !important;
-  box-shadow: 0 10px 32px rgba(80, 11, 117, 0.14), 0 0 20px rgba(152, 21, 89, 0.1) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-}
-
-[data-theme="light"] .hero-face-arabic-box:hover {
-  border-color: var(--berry-magenta) !important;
-  box-shadow: 0 12px 36px rgba(80, 11, 117, 0.22), 0 0 24px rgba(152, 21, 89, 0.18) !important;
-  transform: translateY(-2px);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 [data-theme="light"] .hero-face-arabic-whisper {
-  color: #1F0533 !important;
-  font-size: 1.32rem !important;
-  font-weight: 800 !important;
+  color: var(--berry-magenta) !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
   opacity: 1 !important;
   text-shadow: none !important;
-  letter-spacing: -0.01em;
 }
 
 [data-theme="light"] .hero-face-arabic-name {
-  color: #120022 !important;
+  color: #1C0B29 !important;
   font-weight: 900 !important;
   text-shadow: none !important;
 }
 
 [data-theme="light"] .whisper-bar {
-  background: #981559 !important;
+  background: var(--berry-magenta) !important;
 }
 
 [data-theme="light"] .nav-mobile-menu-drawer {
