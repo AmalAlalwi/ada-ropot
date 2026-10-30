@@ -1,3 +1,4 @@
+
 export const siteConfig = {
   name: "ADA Robot | Designed to Understand",
   nameAr: "روبوت أدا | صُمم ليفهم - المهندسة دعاء الابراهيم",
@@ -32,7 +33,7 @@ export const siteConfig = {
     "Whisper ASR GPT-2 robot"
   ],
   links: {
-    linkedin: "https://linkedin.com/in/duaa-alibrahim",
+    linkedin: "https://www.linkedin.com/in/dua-a-a-48484b297",
     emailPersonal: "duaaalibrahim6@gmail.com",
     phone: "+963-998-962774",
     location: "Aleppo, Syria"
@@ -77,7 +78,7 @@ export function generateStructuredData() {
     },
     "email": "duaaalibrahim6@gmail.com",
     "sameAs": [
-      "https://linkedin.com/in/duaa-alibrahim"
+      "https://www.linkedin.com/in/dua-a-a-48484b297"
     ]
   };
 

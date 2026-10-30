@@ -116,12 +116,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
                       LinkedIn Network
                     </div>
                     <a
-                      href="https://linkedin.com/in/duaa-alibrahim"
+                      href="https://www.linkedin.com/in/dua-a-a-48484b297"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-all", overflowWrap: "anywhere" }}
                     >
-                      linkedin.com/in/duaa-alibrahim
+                      linkedin.com/in/dua-a-a-48484b297
                     </a>
                   </div>
                 </div>
@@ -130,14 +130,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ lang }) => {
               {/* Phone / Location */}
               <div className="contact-card-item">
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0, flex: 1 }}>
-                  <Phone size={20} color="#10B981" style={{ flexShrink: 0 }} />
+                  <a
+                    href="https://wa.me/963998962774"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: "inline-flex", alignItems: "center" }}
+                    title={isAr ? "المراسلة عبر واتساب" : "Chat on WhatsApp"}
+                  >
+                    <Phone size={20} color="#10B981" style={{ flexShrink: 0 }} />
+                  </a>
                   <div style={{ minWidth: 0, flex: 1 }}>
                     <div style={{ fontSize: "0.75rem", color: "var(--text-dim)", textTransform: "uppercase" }}>
                       {isAr ? "الهاتف / واتساب • الموقع" : "Mobile / WhatsApp • Location"}
                     </div>
-                    <div style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-word" }}>
+                    <a
+                      href="https://wa.me/963998962774"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: "0.92rem", color: "var(--text-pure)", fontWeight: "600", wordBreak: "break-word", textDecoration: "none" }}
+                      title={isAr ? "المراسلة عبر واتساب" : "Chat on WhatsApp"}
+                    >
                       +963-998-962774 • Aleppo, Syria
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <button

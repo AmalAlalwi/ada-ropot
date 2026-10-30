@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Official portfolio for ADA Robot, an advanced 17-actuator biomechatronic head (InMoov V2) with multimodal AI emotion recognition, created by Syrian Mechatronics Engineer Duaa Alibrahim (University of Aleppo). الموقع الرسمي لروبوت أدا والمهندسة دعاء الابراهيم.",
   keywords: siteConfig.keywords,
-  authors: [{ name: "Eng. Duaa Alibrahim", url: "https://linkedin.com/in/duaa-alibrahim" }],
+  authors: [{ name: "Eng. Duaa Alibrahim", url: "https://www.linkedin.com/in/dua-a-a-48484b297" }],
   creator: "Eng. Duaa Alibrahim (المهندسة دعاء الابراهيم)",
   publisher: "ADA Robotics Lab",
   robots: {

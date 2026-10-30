@@ -135,12 +135,13 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
             <div className="duaa-hero-banner">
               
               {/* Photo & Identity Frame */}
-              <div className="duaa-photo-frame" style={{ position: "relative", minHeight: "360px" }}>
+              <div className="duaa-photo-frame" style={{ position: "relative", minHeight: "380px", height: "100%", width: "100%" }}>
                 <Image
-                  src="/images/duaa_robotics_workspace.jpg"
+                  src="/images/duaa_ada_workspace_v2.jpg"
                   alt="Eng. Duaa Alibrahim - AI Robotics Engineer"
                   fill
-                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                   priority
                 />
                 <div
@@ -181,7 +182,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 <p style={{ fontSize: "1rem", color: "var(--text-lavender)", lineHeight: "1.7" }}>
                   {isAr
                     ? "مهندسة ميكاترونيكس بجامعة حلب (التخرج: أكتوبر 2026)، متخصصة في دمج البيوميكاترونيكس والذكاء الصنعي لبناء نظام متكامل يحقق استجابة تفاعلية ومحاكاة دقيقة للمشاعر. طوّرت وهندست بنجاح رأس روبوت أدا (ADA Imitated Head) المعتمد على منصة InMoov V2 مع 17 مشغل سيرفو دقيق عالي العزم (Actuators) من نوع JX PDI-11098 9g و JX PDI-6221MG 20kg تحاكي أدق تعابير الوجه البشري وفق نظرية بول إيكمان لوحدات الفعل الوجهي (FACS)، مدعوماً برؤية حاسوبية في الزمن الحقيقي عبر MediaPipe ونماذج تصنيف المشاعر الهجينة."
-                    : "Mechatronics Engineer at the University of Aleppo (Expected Graduation: October 2026), dedicated to integrating biomechatronics and artificial intelligence to build an end-to-end responsive system. Developed and engineered the 17-actuator ADA Imitated Head (InMoov V2 platform) utilizing precision servos (JX PDI-11098 9g & 6221MG 20kg) to replicate human emotional expressions based on Paul Ekman FACS Action Units, powered by real-time MediaPipe computer vision and hybrid emotion classification models."}
+                    : "Mechatronics Engineer at the University of Aleppo (Graduation: October 2026), dedicated to integrating biomechatronics and artificial intelligence to build an end-to-end responsive system. Developed and engineered the 17-actuator ADA Imitated Head (InMoov V2 platform) utilizing precision servos (JX PDI-11098 9g & 6221MG 20kg) to replicate human emotional expressions based on Paul Ekman FACS Action Units, powered by real-time MediaPipe computer vision and hybrid emotion classification models."}
                 </p>
 
                 {/* Key Metric Highlights */}
@@ -217,7 +218,7 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 {/* Direct Action Links */}
                 <div className="duaa-cta-row">
                   <a
-                    href="https://linkedin.com/in/duaa-alibrahim"
+                    href="https://www.linkedin.com/in/dua-a-a-48484b297"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-ada-glow"
@@ -527,47 +528,113 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                 </h3>
               </div>
 
-              <div className="grid-2">
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+                {/* 1. GGRC National Leadership */}
                 <div
                   style={{
                     background: "rgba(14, 4, 27, 0.75)",
-                    border: "1px solid rgba(16, 185, 129, 0.35)",
+                    border: "1px solid rgba(0, 242, 254, 0.35)",
                     borderRadius: "var(--radius-md)",
                     padding: "24px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    gap: "12px",
                   }}
                 >
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
-                    <Heart size={22} color="#10B981" />
-                    <h4 style={{ fontSize: "1.15rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "تدريس رياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال" : "High School Math Tutoring During Earthquake Crisis"}
-                    </h4>
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
+                      <Globe size={22} color="#00F2FE" />
+                      <div>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#FFFFFF" }}>
+                          {isAr ? "المنسق الوطني لمحافظة حلب | المجلس العالمي للتقارب الأكبر (GGRC)" : "National Lead for Aleppo, Syria | GGRC"}
+                        </h4>
+                        <span style={{ fontSize: "0.78rem", color: "var(--accent-cyan)", fontFamily: "monospace" }}>
+                          {isAr ? "يوليو 2026 – حتى الآن" : "July 2026 – Present"}
+                        </span>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
+                      {isAr
+                        ? "المنسق الوطني لمحافظة حلب لدى المجلس العالمي للتقارب الأكبر (The Great Global Reconvergence Council - GGRC)؛ مكرسة لتمكين الباحثين الشباب وتعزيز الابتكار الرقمي وأبحاث الذكاء الاصطناعي والعلوم والتكنولوجيا (STEM) محلياً، مع ربط الكفاءات والمؤسسات الأكاديمية في حلب بالمنصات الدولية عبر الجنوب العالمي."
+                        : "National Lead for Aleppo, Syria | The Great Global Reconvergence Council (GGRC). Dedicated to empowering young researchers and advancing digital innovation, AI, and STEM research locally, while connecting Aleppo’s academic talents and institutions with international platforms across the Global South."}
+                    </p>
                   </div>
-                  <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
-                    {isAr
-                      ? "التطوع لتدريس الرياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال، وتقديم الدعم النفسي والأكاديمي لأكثر من 400 طالب وطالبة عبر تيليغرام وواتساب بتسجيلات صوتية وأوراق عمل لمساعدتهم على اجتياز الصدمات واستكمال تحصيلهم العلمي بنجاح."
-                      : "Volunteered tutoring high school mathematics during the 2023 earthquake disaster, supporting 400+ Syrian students via Telegram and WhatsApp with tailored audio recordings, worksheets, and psychological coaching to overcome trauma and continue learning."}
-                  </p>
+                  <div style={{ display: "inline-block", background: "rgba(0, 242, 254, 0.12)", color: "var(--accent-cyan)", fontSize: "0.72rem", padding: "3px 10px", borderRadius: "var(--radius-full)", fontWeight: "600", width: "fit-content" }}>
+                    {isAr ? "قيادة بحثية وتمكين شبابي" : "National AI & STEM Leadership"}
+                  </div>
                 </div>
 
+                {/* 2. Paper Airplanes English Tutoring */}
                 <div
                   style={{
                     background: "rgba(14, 4, 27, 0.75)",
                     border: "1px solid rgba(245, 158, 11, 0.35)",
                     borderRadius: "var(--radius-md)",
                     padding: "24px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    gap: "12px",
                   }}
                 >
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
-                    <BookOpen size={22} color="#F59E0B" />
-                    <h4 style={{ fontSize: "1.15rem", fontWeight: "700", color: "#FFFFFF" }}>
-                      {isAr ? "متطوعة مع منظمة الطائرات الورقية (Paper Airplanes)" : "Volunteer with Paper Airplanes Organization"}
-                    </h4>
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
+                      <BookOpen size={22} color="#F59E0B" />
+                      <div>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#FFFFFF" }}>
+                          {isAr ? "تدريس اللغة الإنجليزية مع منظمة الطائرات الورقية (Paper Airplanes)" : "English Tutoring | Paper Airplanes"}
+                        </h4>
+                        <span style={{ fontSize: "0.78rem", color: "#F59E0B", fontFamily: "monospace" }}>
+                          {isAr ? "سبتمبر 2026 – حتى الآن" : "September 2026 – Present"}
+                        </span>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
+                      {isAr
+                        ? "التطوع لتدريس اللغة الإنجليزية مع منظمة Paper Airplanes وتمكين الطلاب من اكتساب مهارات التواصل الأكاديمي وبناء الثقة في التفاعل الدولي؛ وذلك بعد التخرج بتفوق والتزام مكثف بالبرنامج من عام 2024 حتى 2026، والارتقاء لدور مدرّسة متطوعة (Tutor) بدءاً من سبتمبر 2026."
+                        : "Volunteering as an English Tutor with Paper Airplanes, empowering students with essential communication skills and global academic confidence. Advanced to the tutor role in September 2026 following rigorous dedication and successful completion of the English program from 2024 to 2026."}
+                    </p>
                   </div>
-                  <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
-                    {isAr
-                      ? "التطوع لتدريس اللغة الإنجليزية للمبتدئين مع منظمة Paper Airplanes، وتمكين الشباب من اكتساب المهارات اللغوية وبناء الثقة في التواصل الأكاديمي، إلى جانب شغف تبسيط وتدريس الرياضيات للأطفال واليافعين (2018 - 2024)."
-                      : "Volunteered with Paper Airplanes teaching beginner English, empowering students with fundamental communication skills and cross-cultural confidence, along with 6+ years of private math instruction (2018–2024)."}
-                  </p>
+                  <div style={{ display: "inline-block", background: "rgba(245, 158, 11, 0.12)", color: "#F59E0B", fontSize: "0.72rem", padding: "3px 10px", borderRadius: "var(--radius-full)", fontWeight: "600", width: "fit-content" }}>
+                    {isAr ? "تدريس لغة بعد التخرج" : "English Tutor (Post-Graduation)"}
+                  </div>
+                </div>
+
+                {/* 3. Earthquake Crisis Math Tutoring */}
+                <div
+                  style={{
+                    background: "rgba(14, 4, 27, 0.75)",
+                    border: "1px solid rgba(16, 185, 129, 0.35)",
+                    borderRadius: "var(--radius-md)",
+                    padding: "24px",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    gap: "12px",
+                  }}
+                >
+                  <div>
+                    <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
+                      <Heart size={22} color="#10B981" />
+                      <div>
+                        <h4 style={{ fontSize: "1.1rem", fontWeight: "700", color: "#FFFFFF" }}>
+                          {isAr ? "تدريس رياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال" : "High School Math Tutoring During Earthquake Crisis"}
+                        </h4>
+                        <span style={{ fontSize: "0.78rem", color: "#10B981", fontFamily: "monospace" }}>
+                          2023
+                        </span>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "0.92rem", color: "var(--text-lavender)", lineHeight: "1.65" }}>
+                      {isAr
+                        ? "التطوع لتدريس الرياضيات لطلاب المرحلة الثانوية أثناء كارثة الزلزال، وتقديم الدعم النفسي والأكاديمي لأكثر من 400 طالب وطالبة عبر تيليغرام وواتساب بتسجيلات صوتية وأوراق عمل لمساعدتهم على اجتياز الصدمات واستكمال تحصيلهم العلمي بنجاح."
+                        : "Volunteered tutoring high school mathematics during the 2023 earthquake disaster, supporting 400+ Syrian students via Telegram and WhatsApp with tailored audio recordings, worksheets, and psychological coaching to overcome trauma and continue learning."}
+                    </p>
+                  </div>
+                  <div style={{ display: "inline-block", background: "rgba(16, 185, 129, 0.12)", color: "#10B981", fontSize: "0.72rem", padding: "3px 10px", borderRadius: "var(--radius-full)", fontWeight: "600", width: "fit-content" }}>
+                    {isAr ? "مبادرة إغاثة تعليمية 400+ طالب" : "Educational Relief 400+ Students"}
+                  </div>
                 </div>
               </div>
             </div>
@@ -587,10 +654,22 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
               <div className="duaa-certs-grid">
                 {[
                   {
-                    title: "Bachelor of Mechatronics Engineering",
-                    org: "University of Aleppo (Faculty of Electrical & Electronics)",
-                    date: "Expected October 2026 • GPA 3.25 / 4.0",
-                    badge: "Graduating Oct 2026",
+                    title: isAr ? "بكالوريوس في هندسة الميكاترونيكس" : "Bachelor of Mechatronics Engineering",
+                    org: isAr ? "جامعة حلب — كلية الهندسة الكهربائية والإلكترونية" : "University of Aleppo (Faculty of Electrical & Electronics)",
+                    date: isAr
+                      ? "تخرج: أكتوبر 2026 • المعدل التراكمي: 77.44% (جيد جداً) • مشروع التخرج: 97% (علامة الشرف)"
+                      : "Graduation: October 2026 • Cumulative Avg: 77.44/100 (Very Good) • Project: 97/100 (Honored)",
+                    badge: isAr ? "تخرج أكتوبر 2026 • امتياز مشروع 97%" : "BSc Oct 2026 • 97% Honors",
+                  },
+                  {
+                    title: isAr
+                      ? "المنسق الوطني لمحافظة حلب | المجلس العالمي للتقارب الأكبر (GGRC)"
+                      : "National Lead for Aleppo, Syria | GGRC",
+                    org: isAr
+                      ? "المجلس العالمي للتقارب الأكبر (The Great Global Reconvergence Council)"
+                      : "The Great Global Reconvergence Council (GGRC)",
+                    date: isAr ? "يوليو 2026 – حتى الآن" : "July 2026 – Present",
+                    badge: isAr ? "قيادة بحثية وتمكين الشباب" : "National Research Leadership",
                   },
                   {
                     title: "1st Place Winner — Tech Harvest Competition",
@@ -611,16 +690,34 @@ export const InventorSpotlightSection: React.FC<InventorSpotlightProps> = ({ lan
                     badge: "11 Projects — 3-Day Exhibition",
                   },
                   {
+                    title: isAr
+                      ? "شهادات الكفاءة في اللغة الإنجليزية B1 و B2"
+                      : "B1 & B2 English Certificates",
+                    org: "Paper Airplanes International Organization",
+                    date: isAr
+                      ? "2024 – 2026 (نتيجة التزام مكثف بالبرنامج)"
+                      : "2024 – 2026 (Dedicated Program Commitment)",
+                    badge: "B1 & B2 CEFR Certified",
+                  },
+                  {
+                    title: isAr
+                      ? "مدرّسة لغة إنجليزية متطوعة (English Tutor)"
+                      : "English Tutor & Educator",
+                    org: "Paper Airplanes International Organization",
+                    date: isAr ? "سبتمبر 2026 – حتى الآن" : "September 2026 – Present",
+                    badge: isAr ? "تدريس لغة بعد التخرج" : "English Tutor (Post-Graduation)",
+                  },
+                  {
                     title: "Business Analytics Level 1 (Excel)",
                     org: "Paper Airplanes International Organization",
-                    date: "Verified Certification",
+                    date: "June 2026 • حزيران 2026",
                     badge: "Analytics & Excel",
                   },
                   {
-                    title: "Paper Airplanes Volunteer & English Educator",
+                    title: "Business Analytics Level 2 (SQL)",
                     org: "Paper Airplanes International Organization",
-                    date: "2024 - 2026",
-                    badge: "Beginner English Teaching",
+                    date: isAr ? "سبتمبر 2026 – حتى الآن" : "September 2026 – Present",
+                    badge: "SQL & Advanced Analytics",
                   },
                   {
                     title: "English Proficiency Certificate C1",

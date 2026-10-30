@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Globe, ArrowUpRight, Menu, X, Cpu, Sparkles, Sun, Moon } from "lucide-react";
-import { AdaLogo } from "./AdaSvgAssets";
+import Image from "next/image";
 
 interface NavbarProps {
   lang: "ar" | "en";
@@ -57,8 +57,15 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, theme, setTheme }
       >
         {/* Left Badge: Official ADA Logo Symbol + Bold "ADa" Wordmark */}
         <a href="#hero" className="nav-badge-box" aria-label="Ada Robot Home" title="ADA Robot">
-          <AdaLogo variant={theme === "light" ? "gradient" : "neon"} width={42} height={20} />
-          <span className="nav-brand-ada-text">ADa</span>
+          <Image
+            src="/images/ROBOT_logo_transparent.svg"
+            alt="ROBOT Logo"
+            width={84}
+            height={40}
+            style={{ objectFit: "contain", height: "32px", width: "auto" }}
+            priority
+          />
+
         </a>
 
         {/* Center Desktop Navigation Links */}

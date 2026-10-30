@@ -238,7 +238,7 @@ body {
   align-items: center;
   justify-content: center;
   background: rgba(18, 5, 28, 0.85);
-  padding: 6px 18px;
+  padding: 4px 12px;
   border-radius: 10px;
   border: 1px solid rgba(168, 85, 247, 0.6);
   box-shadow: 0 0 16px rgba(168, 85, 247, 0.45), inset 0 0 10px rgba(168, 85, 247, 0.15);
@@ -1604,4 +1604,24 @@ body {
 
 [data-theme="light"] .nav-mobile-item-link {
   color: #1C0B29;
+}
+
+
+.footer-attribution-link {
+  color: var(--text-lavender);
+  transition: all 0.25s ease;
+}
+
+.footer-attribution-link:hover {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.35);
+}
+
+[data-theme="light"] .footer-attribution-link {
+  color: #351448 !important;
+}
+
+[data-theme="light"] .footer-attribution-link:hover {
+  color: var(--berry-magenta) !important;
+  text-shadow: none !important;
 }

@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { Mail } from "lucide-react";
-import { AdaLogo, LinkedinIcon } from "../components/AdaSvgAssets";
+import { Mail, Globe } from "lucide-react";
+import Image from "next/image";
+import { LinkedinIcon } from "../components/AdaSvgAssets";
 
 interface FooterProps {
   lang: "ar" | "en";
@@ -27,7 +28,13 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
           
           {/* Col 1: Brand & Identity */}
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-            <AdaLogo variant="gradient" width={160} height={70} />
+            <Image
+              src="/images/ROBOT_logo_transparent.svg"
+              alt="ROBOT Logo"
+              width={160}
+              height={76}
+              style={{ objectFit: "contain", height: "55px", width: "auto", maxWidth: "160px" }}
+            />
             <p style={{ fontSize: "0.88rem", color: "var(--text-muted)", lineHeight: "1.6" }}>
               {isAr
                 ? "آدا — رفيق روبوتي تفاعلي قيد التطوير، مصمَّم ليدعم الأطفال في التعلم والتواصل والتفاعل بثقة ومتعة، مع تركيز خاص على ذوي متلازمة داون وطيف التوحد."
@@ -68,7 +75,7 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
             </p>
             <div style={{ display: "flex", gap: "12px", marginTop: "8px" }}>
               <a
-                href="https://linkedin.com/in/duaa-alibrahim"
+                href="https://www.linkedin.com/in/dua-a-a-48484b297"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "var(--accent-cyan)", display: "inline-flex", alignItems: "center", gap: "4px", fontSize: "0.82rem" }}
@@ -88,32 +95,73 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
 
         </div>
 
-        {/* SEO Tagline & Meta Strip */}
+        {/* Footer Bottom Bar: Copyright & Attributions */}
         <div
           style={{
-            borderTop: "1px solid rgba(152, 21, 89, 0.2)",
+            borderTop: "1px solid rgba(152, 21, 89, 0.25)",
             paddingTop: "24px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
             flexWrap: "wrap",
-            gap: "14px",
-            fontSize: "0.8rem",
-            color: "var(--text-dim)",
+            gap: "16px",
+            fontSize: "0.88rem",
+            color: "var(--text-muted)",
           }}
         >
-          <div>
-            © 2026 ADA Robot & Eng. Duaa Alibrahim (دعاء الابراهيم). {isAr ? "جميع الحقوق محفوظة." : "All rights reserved."}
+          {/* Copyright */}
+          <div style={{ display: "flex", alignItems: "center", gap: "6px", flexWrap: "wrap" }}>
+            <span>{isAr ? "جميع الحقوق محفوظة" : "All rights reserved"}</span>
+            <span>©</span>
+            <strong style={{ color: "var(--text-pure)", fontWeight: "600" }}>
+              {isAr ? "أدا روبوت 2026" : "ADA Robot 2026"}
+            </strong>
           </div>
 
-          <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
-            <span>ADA Robot</span>
-            <span>•</span>
-            <span>آدا — رفيق روبوتي للأطفال</span>
-            <span>•</span>
-            <span>المهندسة دعاء الابراهيم</span>
-            <span>•</span>
-            <span>إننا نهمس بالأمل</span>
+          {/* Organization & Developer Credits */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "16px",
+              flexWrap: "wrap",
+            }}
+          >
+            <a
+              href="https://syrian-technocrats.org/ar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-attribution-link"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                textDecoration: "none",
+                fontWeight: "500",
+              }}
+            >
+              <Globe size={15} style={{ color: "var(--accent-magenta)", flexShrink: 0 }} />
+              <span>{isAr ? "تنظيم التكنوقراط السوريين" : "Syrian Technocrats Organization"}</span>
+            </a>
+
+            <span style={{ color: "rgba(152, 21, 89, 0.4)", userSelect: "none" }}>•</span>
+
+            <a
+              href="https://www.linkedin.com/in/amal-al-alawi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-attribution-link"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                textDecoration: "none",
+                fontWeight: "500",
+              }}
+            >
+              <LinkedinIcon size={15} color="var(--accent-cyan)" style={{ flexShrink: 0 }} />
+              <span>{isAr ? "تطوير م.أمل العلوي" : "Developed by Eng. Amal Al-Alawi"}</span>
+            </a>
           </div>
         </div>
 
